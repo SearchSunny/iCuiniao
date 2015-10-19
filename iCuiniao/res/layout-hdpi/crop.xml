@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageView android:id="@+id/cropback" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="matrix">
+		</ImageView>
+		<com.cmmobi.icuiniao.ui.view.CropView
+			android:id="@+id/cropview" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:padding="10dp">
+				<Button android:id="@+id/leftbtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/titlebar_backbutton_0"
+					android:layout_alignParentLeft="true">
+				</Button>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true" android:paddingTop="3dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="编辑照片"
+						android:textColor="#ccffffff" android:textSize="16dp"
+						android:singleLine="true">
+					</TextView>
+				</LinearLayout>
+				<Button android:id="@+id/rightbtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/savebtn_0"
+					android:layout_alignParentRight="true">
+				</Button>
+				<Button android:id="@+id/crop_rote" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/crop_rote"
+					android:layout_alignParentBottom="true">
+				</Button>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentRight="true">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="20dp">
+						<Button android:id="@+id/crop_zoomin" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:background="@drawable/crop_zoomin">
+						</Button>
+					</LinearLayout>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp">
+						<Button android:id="@+id/crop_zoomout"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/crop_zoomout">
+						</Button>
+					</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+		</com.cmmobi.icuiniao.ui.view.CropView>
+	</FrameLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

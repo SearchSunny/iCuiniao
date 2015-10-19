@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/commoditybg"
+		android:orientation="vertical">
+		<ScrollView android:id="@+id/scrollview"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:visibility="visible">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="vertical">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg_line"
+					android:gravity="center" android:padding="10dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="撒娇内容"
+						android:textColor="#ccffffff" android:textSize="16dp"
+						android:singleLine="true">
+					</TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg_line"
+					android:gravity="center_vertical" android:padding="10dp">
+					<TextView android:id="@+id/email_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="邮箱:" android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg_line"
+					android:gravity="center_vertical" android:orientation="vertical"
+					android:padding="10dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="收货信息:"
+						android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/name_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="姓名:" android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/addr_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="地址:" android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/phone_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="电话:" android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg_line"
+					android:gravity="center_vertical" android:orientation="vertical"
+					android:padding="10dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="规格尺寸:"
+						android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/item1_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="尺寸:" android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/item2_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="颜色:" android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/num_text" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="数量:"
+						android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg_line"
+					android:gravity="center_vertical" android:orientation="vertical"
+					android:padding="10dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="留言:"
+						android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/msg_text" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="留言内容"
+						android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg"
+					android:gravity="center_vertical" android:orientation="vertical"
+					android:padding="10dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="商品描述:"
+						android:textColor="#ffffffff" android:textSize="14dp">
+					</TextView>
+					<TextView android:id="@+id/info_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="描述内容" android:textColor="#ffffffff"
+						android:textSize="14dp">
+					</TextView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg"
+					android:gravity="center" android:orientation="vertical"
+					android:padding="10dp">
+					<ImageView android:id="@+id/img" android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					</ImageView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/commoditybg"
+					android:gravity="center" android:orientation="horizontal"
+					android:padding="10dp">
+					<Button android:id="@+id/sendbtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/local_sajiao_sendbtn_0">
+					</Button>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingLeft="5dp">
+						<Button android:id="@+id/backbtn" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:background="@drawable/local_sajiao_backbtn_0">
+						</Button>
+					</LinearLayout>
+				</LinearLayout>
+
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+

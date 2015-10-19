@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/imagelayout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	</LinearLayout>
+	<LinearLayout android:id="@+id/line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="bottom" android:layout_gravity="bottom">
+	    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/share_line"/>
+	</LinearLayout>
+	</FrameLayout>
+	<LinearLayout android:id="@+id/lprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading">
+		</ProgressBar>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/videonotifi" android:visibility="gone" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				android:background="@drawable/videonotifi" android:layout_gravity="bottom|right"
+				android:layout_marginBottom="60dp" android:layout_marginRight="40dp">
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="bottom|right"
+		android:paddingRight="20dp" android:paddingBottom="20dp">
+		<Button android:id="@+id/mypage_playbtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/mypage_playbtn"
+			android:visibility="invisible">
+		</Button>
+	</LinearLayout>
+	<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/frmeVideoNotifi">
+	<LinearLayout android:id="@+id/videonotifi" android:visibility="gone" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				android:background="@drawable/videonotifi" android:layout_gravity="bottom|right"
+				android:layout_marginBottom="60dp" android:layout_marginRight="40dp">
+	</LinearLayout>
+	</FrameLayout>
+</FrameLayout>

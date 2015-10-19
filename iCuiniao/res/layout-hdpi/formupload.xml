@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/commoditybg" android:orientation="vertical">
+
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/commoditybg_line" android:orientation="horizontal"
+		android:padding="10dp" android:layout_alignParentTop="true">
+
+		<Button android:id="@+id/titlebar_backbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_backbutton_0">
+		</Button>
+
+		<Button android:id="@+id/titlebar_menubutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/sendbtn_0">
+		</Button>
+
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_toRightOf="@id/titlebar_backbutton"
+			android:layout_toLeftOf="@id/titlebar_menubutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="晒单" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:scrollbars="none">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:padding="10dp"
+				android:background="@drawable/commoditybg_line">
+				<EditText android:id="@+id/edittext" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:lines="4"
+					android:hint="分享心得" android:maxLength="100">
+				</EditText>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:padding="10dp"
+				android:background="@drawable/commoditybg_line">
+				<Button android:id="@+id/camrebtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/local_formbtn_0">
+				</Button>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center">
+				<ImageView android:id="@+id/image" android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				</ImageView>
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

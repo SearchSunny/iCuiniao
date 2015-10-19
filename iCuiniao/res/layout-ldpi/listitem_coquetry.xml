@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:padding="10dp">
+
+	<LinearLayout android:id="@+id/layoutArea"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/coquetry_itembg" android:paddingTop="3px"
+		android:paddingLeft="3px" android:paddingRight="0px"
+		android:paddingBottom="0px">
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:background="#ffffffff">
+
+				<LinearLayout android:id="@+id/imageArea"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:gravity="center" android:layout_centerVertical="true">
+					<ImageView android:id="@+id/coquetry_image"
+						android:layout_width="60px" android:layout_height="60px"
+						android:background="#ffffffff">
+					</ImageView>
+				</LinearLayout>
+
+				<RelativeLayout android:id="@+id/rTextArea"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/imageArea" android:gravity="center">
+					<RelativeLayout android:id="@+id/textArea"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/imageArea" android:minHeight="60px"
+						android:gravity="center_vertical" android:background="#ffffffff">						
+						<LinearLayout 
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:orientation="vertical" android:padding="10dp"
+							android:gravity="center_vertical">
+							<LinearLayout android:layout_width="fill_parent"
+								android:layout_height="wrap_content" android:paddingBottom="10dp">
+								<TextView android:id="@+id/coquetry_time"
+									android:layout_width="fill_parent" android:layout_height="wrap_content"
+									android:text="亲,我好喜欢这个,买给我吧" android:textColor="#cc000000"
+									android:textSize="14dp">
+								</TextView>
+							</LinearLayout>
+							<TextView android:id="@+id/coquetry_to"
+								android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:text="2012-01-01 00:00" android:textColor="#7f000000"
+								android:textSize="10dp">
+							</TextView>
+						</LinearLayout>
+					</RelativeLayout>
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+			<ImageView android:id="@+id/coquetry_cover"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/coquetry_cover"
+				android:layout_gravity="bottom|right" android:visibility="invisible">
+			</ImageView>
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+	<ImageView android:id="@+id/coquetry_shadow"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/coquetry_shadow"
+		android:layout_centerHorizontal="true" android:layout_below="@id/layoutArea">
+	</ImageView>
+
+</RelativeLayout>

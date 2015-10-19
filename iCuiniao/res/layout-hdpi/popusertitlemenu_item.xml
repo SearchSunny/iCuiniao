@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"	
+	android:paddingLeft ="6dp"
+	android:paddingRight ="6dp"
+	android:gravity="center_vertical">	
+		<LinearLayout android:id="@+id/linearUser"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/usermenuchoice"
+		android:gravity="center_vertical"
+		android:layout_marginTop="15dp"
+		android:layout_marginBottom="15dp">
+	<TextView android:id="@+id/popusertitlemenu_item"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="#FFffffff"
+		android:text="好友"		
+		android:layout_marginLeft="15dp"
+		android:textSize="18sp">
+	</TextView>
+	</LinearLayout>
+</RelativeLayout>

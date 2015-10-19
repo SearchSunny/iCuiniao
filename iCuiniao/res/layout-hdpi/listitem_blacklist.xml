@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/blackLayout"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" 	
+	android:paddingTop="10dp" android:paddingBottom="10dp"
+	android:background="@drawable/list_shareitem_color_bg">
+	<RelativeLayout android:id="@+id/userLayout" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" >
+	<ImageView android:id="@+id/usericonImg" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView android:id="@+id/username"
+		android:layout_marginLeft="10dp" android:text=""
+		android:layout_toRightOf="@id/usericonImg" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textColor="#ff000000"
+		android:textSize="16sp" android:layout_centerVertical="true"
+		android:singleLine="true" android:ems="10" />
+	</RelativeLayout>
+	<ImageView android:id="@+id/imgDelBlack" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/addf_0" 
+		android:layout_marginLeft="10dp"
+		android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/commoditybg">
+	<com.cmmobi.icuiniao.ui.view.MainMenu
+		android:id="@+id/mainmenu" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</com.cmmobi.icuiniao.ui.view.MainMenu>
+	<LinearLayout android:id="@+id/linearPage"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:background="@drawable/mainpagebg">
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarfloatbg" android:orientation="horizontal"
+			android:paddingLeft="10dp" android:paddingRight="10dp">
+			<Button android:id="@+id/titlebar_leftmenu"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_menubutton_0"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:visibility="invisible">
+			</Button>
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton1_0"
+				android:visibility="invisible">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton1_0">
+			</Button>
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true" 
+				android:gravity="center" android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton"
+				android:background="@drawable/titleback">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="添加好友" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+				<ImageView android:id="@+id/titlebar_titleimage"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/titlebar_sanjiao"
+					android:layout_gravity="center_vertical">
+				</ImageView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<LinearLayout android:layout_marginTop="10dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal">
+			<ImageView android:id="@+id/overallFind"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/overall_find1" />
+			<ImageView android:id="@+id/invite" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/invite2" />
+		</LinearLayout>
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:id="@+id/lineSearch"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:orientation="vertical" android:padding="10dp">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal">
+					
+					<ImageView android:id="@+id/btn_find"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/search2_find1" android:layout_alignParentRight="true"/>
+					<EditText android:id="@+id/et_find" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/search2_left1" 
+						android:gravity="left|center_vertical" android:maxEms="6"
+						android:singleLine="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@id/btn_find"
+						/>
+				</RelativeLayout>
+
+				<com.cmmobi.icuiniao.ui.view.ListviewForUserInfo android:id="@+id/findList" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:layout_marginTop="10dp"
+					android:cacheColorHint="@color/transparent_all"
+					android:fastScrollEnabled="true" android:focusable="false"
+					android:clickable="false" android:dividerHeight="1px"
+					android:divider="#FFc6c7cb" android:scrollbars="none"
+					android:listSelector="@android:color/transparent" 
+					android:fadingEdge="none" />
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/linearInvite"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:padding="10dp" android:visibility="invisible">
+				<com.cmmobi.icuiniao.ui.view.LitviewNoOverScroll android:id="@+id/inviteList"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="10dp" android:cacheColorHint="@color/transparent_all"
+					android:fastScrollEnabled="true" android:focusable="false"
+					android:clickable="false" android:dividerHeight="1px"
+					android:divider="#FFc6c7cb" android:scrollbars="none"
+					android:listSelector="@color/transparent_all"
+					android:fadingEdge="none" />
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+
+
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

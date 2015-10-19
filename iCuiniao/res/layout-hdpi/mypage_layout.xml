@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:icuiniao="http://schemas.android.com/apk/res/com.cmmobi.icuiniao"
+	android:id="@+id/mypagelayout" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="horizontal"
+	android:background="@drawable/commoditybg">
+
+	<com.cmmobi.icuiniao.ui.view.MainMenu
+		android:id="@+id/mainmenu" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</com.cmmobi.icuiniao.ui.view.MainMenu>
+
+	<FrameLayout android:id="@+id/fmypage"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="#fffef9f9">
+
+		<com.cmmobi.icuiniao.ui.view.MyPageGallery
+			android:id="@+id/mypage_gallery" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:fadingEdge="none">
+		</com.cmmobi.icuiniao.ui.view.MyPageGallery>
+
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarfloatbg2" android:orientation="horizontal"
+			android:paddingLeft="10dp" android:paddingRight="10dp">
+			<Button android:id="@+id/titlebar_leftmenu"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_menubutton_0"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:visibility="invisible">
+			</Button>
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton1_0"
+				android:visibility="visible">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton1_0">
+			</Button>
+
+			<ImageView android:id="@+id/titleMessageImageId"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/dian" android:layout_toLeftOf="@id/titlebar_menubutton"
+				android:layout_alignParentRight="true" android:layout_marginTop="8dip" 
+				android:layout_marginRight="2dip" android:visibility="gone">
+				</ImageView>
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true" android:paddingTop="10dp"
+				android:gravity="center_horizontal" android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="商品详情" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<LinearLayout android:id="@+id/lpopupFwRightView"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<com.cmmobi.icuiniao.ui.view.PopupMenu
+				android:id="@+id/popupmenu" android:layout_width="fill_parent"
+				android:layout_height="61dip" android:layout_gravity="bottom"
+				android:paddingLeft="20px" android:paddingRight="20px">
+
+				<ImageButton android:id="@+id/popupmenu_button"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/anniu_0">
+				</ImageButton>
+
+				<com.cmmobi.icuiniao.ui.view.PopupFwRightView
+					android:id="@+id/popupFwRightView" android:layout_width="fill_parent"
+					android:layout_height="62dip" icuiniao:bg_leftResID="@drawable/bg_left"
+					icuiniao:bg_middleResID="@drawable/bg_middle"
+					icuiniao:bg_rightResID="@drawable/bg_right" icuiniao:animation="true"
+					icuiniao:renderSpeed="40" android:visibility="invisible"
+					android:orientation="horizontal">
+					<LinearLayout android:id="@+id/lbutton"
+						android:layout_width="fill_parent" android:layout_height="62dip"
+						android:orientation="horizontal" android:visibility="invisible">
+						<ImageView android:id="@+id/backImageView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/jiantou_0">
+						</ImageView>
+						<ImageView android:id="@+id/shareImageView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/fenxiang_0">
+						</ImageView>
+						<ImageView android:id="@+id/lookImageView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/kankan_0">
+						</ImageView>
+
+
+						<RelativeLayout android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<ImageView android:id="@+id/messageImageView"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:background="@drawable/xiaoxi_0">
+							</ImageView>
+							
+							<ImageView android:id="@+id/tempMessageImageId"
+								android:layout_width="27dp" android:layout_height="40dp"
+								android:background="@drawable/xiaoxi_f" android:visibility="invisible">
+							</ImageView>
+							<ImageView android:id="@+id/messageImageId"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:background="@drawable/dian" android:layout_toRightOf="@id/tempMessageImageId"
+								android:layout_marginTop="11dip" android:layout_marginRight="18dip"
+								android:visibility="gone"></ImageView>
+								
+							
+							
+						</RelativeLayout>
+						<ImageView android:id="@+id/gestureImageView"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/shoushi_0">
+						</ImageView>
+					</LinearLayout>
+				</com.cmmobi.icuiniao.ui.view.PopupFwRightView>
+
+			</com.cmmobi.icuiniao.ui.view.PopupMenu>
+		</LinearLayout>
+		
+			<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">    	
+		    <com.cmmobi.icuiniao.ui.view.PopupMenuA
+		    	android:id="@+id/rightPopupMenuA"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentRight="true"
+		    	android:layout_alignParentBottom="true"
+		    	android:layout_marginBottom="20dip"
+		    	android:visibility="gone"
+		    	>
+		    </com.cmmobi.icuiniao.ui.view.PopupMenuA>
+			<com.cmmobi.icuiniao.ui.view.PopupMenuA
+		    	android:id="@+id/rightBottomPopupMenuA"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentRight="true"
+		    	android:layout_alignParentBottom="true"
+		    	android:layout_marginRight="70dip"
+		    	android:visibility="gone"
+		    	>
+		    </com.cmmobi.icuiniao.ui.view.PopupMenuA>
+					    
+		    <com.cmmobi.icuiniao.ui.view.PopupMenuA
+		    	android:id="@+id/leftPopupMenuA"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:layout_alignParentBottom="true"
+		    	android:layout_marginBottom="20dip"
+		    	android:visibility="gone"
+		    	>
+		    </com.cmmobi.icuiniao.ui.view.PopupMenuA>
+			<com.cmmobi.icuiniao.ui.view.PopupMenuA
+		    	android:id="@+id/leftBottomPopupMenuA"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentLeft="true"
+		    	android:layout_alignParentBottom="true"
+		    	android:layout_marginLeft="70dip"
+		    	android:visibility="gone"
+		    	>
+		    </com.cmmobi.icuiniao.ui.view.PopupMenuA>	
+			
+    	</RelativeLayout>
+    	
+    	<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/notifiFrame">
+    	<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+    	<LinearLayout
+				android:id="@+id/leftNotification"  
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/notification2"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentBottom="true"
+			    android:layout_marginLeft="80dip"
+			    android:layout_marginBottom="50dip"
+			    android:visibility="gone"
+			    >
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="长按操作条可更改操作条设置"
+			        android:textSize="12sp"
+			        android:textColor="#000000"
+			        android:layout_marginLeft="3dip"
+			        android:visibility="gone"
+			        />
+			</LinearLayout>	
+		<LinearLayout
+				android:id="@+id/rightNotification" 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/notification1"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentBottom="true"
+			    android:layout_marginRight="85dip"
+			    android:layout_marginBottom="50dip"
+			    android:visibility="gone"
+			    >
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="长按操作条可更改操作条设置"
+			        android:textSize="12sp"
+			        android:textColor="#000000"
+			        android:layout_marginLeft="3dip"
+			        android:visibility="gone"
+			        />
+		</LinearLayout>	
+			<LinearLayout
+				android:id="@+id/likenotifi"  
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/likenotifi"
+			    android:layout_marginRight="67dp"
+			    android:layout_marginBottom="135dp"
+			    android:visibility="gone"
+			     android:layout_alignParentRight="true"
+			    android:layout_alignParentBottom="true"
+			    />	
+			    
+			    <LinearLayout
+				android:id="@+id/videonotifi"  
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/videonotifi"
+			    android:layout_marginRight="36dp"
+			    android:layout_marginBottom="205dp"
+			    android:visibility="gone"
+			     android:layout_alignParentRight="true"
+			    android:layout_alignParentBottom="true"
+			    />	 
+			    </RelativeLayout>       	    		
+    		
+	</FrameLayout>
+	</FrameLayout>
+	
+
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<FrameLayout android:id="@+id/rock" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/rock">
+		<RelativeLayout android:id="@+id/rrocktext1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingBottom="130dp">
+			<TextView android:id="@+id/rocktext1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true" android:text="主人,您有2次摇摇机会,标记自己"
+				android:textColor="#ccffffff" android:textSize="18dp">
+			</TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/rrocktext2"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingBottom="110dp">
+			<TextView android:id="@+id/rocktext2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true" android:text="喜欢的商品,要不,会摇不见哦."
+				android:textColor="#ccffffff" android:textSize="18dp">
+			</TextView>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/rrockbackbtn"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingBottom="70dp">
+			<Button android:id="@+id/rockbackbtn" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true" android:background="@drawable/rock_backbtn_0">
+			</Button>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/rrocktext3"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingBottom="40dp">
+			<TextView android:id="@+id/rocktext3" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true" android:text="返回商品页,标记喜欢的商品"
+				android:textColor="#7fffffff" android:textSize="14dp">
+			</TextView>
+		</RelativeLayout>
+	</FrameLayout>
+</LinearLayout>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="PopupFwRightView">
+		<attr name="bg_leftResID" format="reference" />
+		<attr name="bg_middleResID" format="reference" />
+		<attr name="bg_rightResID" format="reference" />
+		<attr name="animation" format="boolean" />
+		<attr name="renderSpeed" format="integer" />
+	</declare-styleable>
+	
+	<declare-styleable name="PopupMenu">
+	</declare-styleable>
+	
+</resources>

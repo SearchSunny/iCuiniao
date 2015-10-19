@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout 
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg" android:orientation="vertical">
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/titlebarfloatbg2" android:orientation="horizontal"
+		android:paddingLeft="10dp" android:paddingRight="10dp">
+		<Button android:id="@+id/titlebar_leftmenu"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/titlebar_menubutton_0"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:visibility="invisible">
+		</Button>
+		<Button android:id="@+id/titlebar_backbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_backbutton1_0"
+			android:visibility="visible">
+		</Button>
+
+		<Button android:id="@+id/titlebar_menubutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_menubutton1_0"
+			android:visibility="invisible">
+		</Button>
+
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:paddingTop="10dp"
+			android:gravity="center_horizontal" android:layout_toRightOf="@id/titlebar_backbutton"
+			android:layout_toLeftOf="@id/titlebar_menubutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="邀请好友" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:gravity="center_horizontal"
+		android:padding="20dp">		
+		<ImageView android:layout_width="100dp"
+			android:layout_height="100dp" android:background="@drawable/twocode" 
+			android:scaleType="fitXY"/>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingLeft="20dp" android:paddingRight="20dp"
+		android:orientation="vertical">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/share_invite" 
+			android:textColor="#ff000000"
+			android:textSize="18sp"/>
+		<Button 
+			android:id="@+id/sharebtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="40dp"
+			android:background="@drawable/sharebtn0"/>
+			
+	</LinearLayout>
+</LinearLayout>
+
+		<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

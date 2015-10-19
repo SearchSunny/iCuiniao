@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarbg" android:orientation="horizontal"
+			android:paddingLeft="10dp" android:paddingRight="10dp"
+			android:layout_alignParentTop="true">
+
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton_0">
+			</Button>
+
+			<Button android:id="@+id/titlebar_addbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerVertical="true" android:background="@drawable/title_addbtn_0"
+				android:layout_alignParentRight="true" >
+			</Button>
+
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+				android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_addbutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="收货地址信息" android:textColor="#ccffffff"
+					android:textSize="16dp" android:paddingRight="5dp"
+					android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<ExpandableListView android:id="@+id/newsList"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:cacheColorHint="@color/transparent"
+				android:drawSelectorOnTop="false" android:listSelector="@color/transparent"
+				android:groupIndicator="@null" android:divider="@null"
+				android:dividerHeight="0dip">
+			</ExpandableListView>
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="gone">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

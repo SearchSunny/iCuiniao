@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg" 
+	android:orientation="vertical">
+    <FrameLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+        <com.cmmobi.icuiniao.ui.view.MainMenu
+			android:id="@+id/mainmenu" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:background="@drawable/commoditybg">
+		</com.cmmobi.icuiniao.ui.view.MainMenu>
+		<ScrollView 
+			android:id="@+id/scrollview"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:scrollbars="none">
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    <RelativeLayout android:id="@+id/rtitlebar"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/titlebarbg"
+					android:orientation="horizontal"
+					android:paddingLeft="10dp" android:paddingRight="10dp"
+					android:layout_alignParentTop="true">
+					<Button android:id="@+id/titlebar_leftmenu"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/titlebar_menubutton_0"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true" 
+						android:visibility="invisible">
+					</Button>
+					<Button android:id="@+id/titlebar_backbutton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true" android:background="@drawable/titlebar_backbutton_0"
+						android:visibility="invisible">
+					</Button>
+					<Button android:id="@+id/titlebar_menubutton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0">
+					</Button>
+					<ImageView android:id="@+id/messageImageId" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:background="@drawable/dian"
+						android:layout_toLeftOf="@id/titlebar_menubutton" android:layout_alignParentRight="true" 
+						android:layout_marginTop="8dip" android:layout_marginRight="2dip"
+						android:visibility="gone"></ImageView>
+					<LinearLayout android:id="@+id/titlebar_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+						android:layout_toRightOf="@id/titlebar_backbutton"
+						android:layout_toLeftOf="@id/titlebar_menubutton">
+						<TextView android:id="@+id/titlebar_titletext"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="翠鸟登录" android:textColor="#ccffffff" android:textSize="16dp"
+							android:paddingRight="5dp" android:singleLine="true">
+						</TextView>
+					</LinearLayout>
+				</RelativeLayout>
+		        <RelativeLayout 
+		            android:id="@+id/top"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal|center_vertical"
+		            android:background="@drawable/login_background_1"
+		            >
+					<ImageView 
+					    android:id="@+id/cuiniaoImageView"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center_horizontal|center_vertical" 
+					    android:layout_centerHorizontal="true"
+					    android:background="@drawable/login_cuiniao"
+					    android:layout_marginTop="40dip"
+					    />			            
+					<TextView 
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_below="@id/cuiniaoImageView"
+					    android:layout_alignParentBottom="true"
+					    android:layout_marginTop="50dip"
+					    android:text="请选择登录方式"
+					    android:textSize="20dip"
+						android:layout_centerHorizontal="true"
+						android:textColor="#cc000000"
+					    />
+		        </RelativeLayout>
+		        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:orientation="vertical"
+		            android:layout_gravity="center_horizontal"
+		            android:background="@drawable/login_background_2"
+		            android:layout_below="@id/top"
+		            android:layout_alignParentBottom="true"
+		            >
+					<LinearLayout 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal"
+			            android:layout_gravity="center_horizontal"
+			            android:layout_marginTop="10dip"
+			            >
+			        	<Button 
+			        	    android:id="@+id/weibobtn"
+			        	    android:layout_width="wrap_content"
+			        	    android:layout_height="wrap_content"
+			        	    android:background="@drawable/login_weibo_button_0"
+			        	    />
+			        	<Button 
+			        	    android:id="@+id/qqbtn"
+			        	    android:layout_width="wrap_content"
+			        	    android:layout_height="wrap_content"
+			        	    android:background="@drawable/login_qq_button_0"
+			        	    android:layout_marginLeft="60dip"
+			        	    />
+			        </LinearLayout>
+			        <LinearLayout 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal"
+			            android:layout_gravity="center_horizontal"
+			            android:layout_marginTop="20dip"
+			            >
+			            <Button 
+			                android:id="@+id/taobaobtn"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:background="@drawable/login_taobao_button_0"
+			                />
+			        	<Button 
+			        	    android:id="@+id/login_login"
+			        	    android:layout_width="wrap_content"
+			        	    android:layout_height="wrap_content"
+			        	    android:background="@drawable/login_cuiniao_button_0"
+			        	    android:layout_marginLeft="60dip"
+			        	    />				            
+			        </LinearLayout>			            
+		        </LinearLayout>   
+			</LinearLayout>	
+		</ScrollView>	
+    </FrameLayout>
+</RelativeLayout>

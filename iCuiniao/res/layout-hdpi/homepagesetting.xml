@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/mainpagebg" 
+		android:orientation="vertical">
+	
+	    <LinearLayout 
+			android:id="@+id/settingpage"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:orientation="vertical" 
+			android:background="@drawable/mainpagebg">	
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarbg" android:orientation="horizontal"
+			android:paddingLeft="10dp" android:paddingRight="10dp">
+
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton_0">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0"
+				android:visibility="invisible">
+			</Button>
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+				android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="主页隐私设置" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+			<ScrollView 
+			    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:scrollbars="none">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:orientation="vertical">	
+					<LinearLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content" 
+						android:orientation="vertical"
+						android:paddingTop="20dp"
+						android:paddingLeft="10dp"
+		    			android:paddingRight="10dp">
+					    <LinearLayout 
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content" 
+							android:orientation="vertical"
+							android:background="@drawable/poplike_inputbg">
+							<RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content" 
+								android:paddingLeft="10dp"
+								android:paddingRight="10dp"
+								android:paddingTop="15dp" 
+								android:paddingBottom="15dp"
+								android:background="@drawable/selectbg_line_0">
+								<TextView 
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content" 
+									android:text="允许任何人加好友"
+									android:textColor="#cc000000" 
+									android:textSize="20dp"
+									android:layout_centerVertical="true">
+								</TextView>
+        						<com.cmmobi.icuiniao.ui.view.SlipButton
+            						android:id="@+id/allAddFriendSlipButton"
+            						android:layout_width="70dip"
+            						android:layout_height="30dip"
+            						android:layout_alignParentRight="true"
+            						android:layout_centerVertical="true"/>
+							</RelativeLayout>
+							<RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content" 
+								android:paddingLeft="10dp"
+								android:paddingRight="10dp"
+								android:paddingTop="15dp" 
+								android:paddingBottom="15dp"
+								android:background="@drawable/selectbg_line_0">
+								<TextView 
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content" 
+									android:text="喜欢好友可见"
+									android:textColor="#cc000000" 
+									android:textSize="20dp"
+									android:layout_centerVertical="true">
+								</TextView>
+        						<com.cmmobi.icuiniao.ui.view.SlipButton
+            						android:id="@+id/likeFriendSlipButton"
+            						android:layout_width="70dip"
+            						android:layout_height="30dip"
+            						android:layout_alignParentRight="true"
+            						android:layout_centerVertical="true"/>
+							</RelativeLayout>
+							<RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content" 
+								android:background="@drawable/selectbg_line_0"
+								android:paddingLeft="10dp"
+								android:paddingRight="10dp"
+								android:paddingTop="15dp" 
+								android:paddingBottom="15dp">
+								<TextView 
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content" 
+									android:text="公开分享"
+									android:textColor="#cc000000" 
+									android:textSize="20dp"
+									android:layout_centerVertical="true">
+								</TextView>
+        						<com.cmmobi.icuiniao.ui.view.SlipButton
+            						android:id="@+id/shareFriendSlipButton"
+            						android:layout_width="70dip"
+            						android:layout_height="30dip"
+            						android:layout_alignParentRight="true"
+            						android:layout_centerVertical="true" />
+							</RelativeLayout>	
+							<RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content" 
+								android:background="@drawable/selectbg_line_0"
+								android:paddingLeft="10dp"
+								android:paddingRight="10dp"
+								android:paddingTop="15dp" 
+								android:paddingBottom="15dp">
+								<TextView 
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content" 
+									android:text="公开评论"
+									android:textColor="#cc000000" 
+									android:textSize="20dp"
+									android:layout_centerVertical="true">
+								</TextView>
+        						<com.cmmobi.icuiniao.ui.view.SlipButton
+            						android:id="@+id/baskFriendSlipButton"
+            						android:layout_width="70dip"
+            						android:layout_height="30dip"
+            						android:layout_alignParentRight="true"
+            						android:layout_centerVertical="true"/>
+							</RelativeLayout>
+					    </LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout> 	
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>    
+</FrameLayout>

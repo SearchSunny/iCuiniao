@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg" android:orientation="vertical">
+
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/commoditybg_line" android:orientation="horizontal"
+		android:padding="10dp" android:layout_alignParentTop="true">
+
+		<Button android:id="@+id/titlebar_backbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_backbutton_0">
+		</Button>
+
+		<Button android:id="@+id/titlebar_menubutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_menubutton_0"
+			android:visibility="invisible">
+		</Button>
+
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_toRightOf="@id/titlebar_backbutton"
+			android:layout_toLeftOf="@id/titlebar_menubutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="注册" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+
+	</RelativeLayout>
+	
+	<ScrollView android:id="@+id/scrollview" 
+	android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:padding="10dp">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingBottom="10dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingRight="10dp"
+				android:layout_alignParentLeft="true" android:id="@+id/email">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="邮箱"
+					android:textColor="#cc000000" android:textSize="20dp">
+				</TextView>
+			</LinearLayout>
+			<EditText android:id="@+id/email_input"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/email" android:hint="请输入您的邮箱"
+				android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+				android:singleLine="true" android:inputType="textEmailAddress"
+				android:maxLength="100">
+			</EditText>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingBottom="10dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingRight="10dp"
+				android:layout_alignParentLeft="true" android:id="@+id/password">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="密码"
+					android:textColor="#cc000000" android:textSize="20dp">
+				</TextView>
+			</LinearLayout>
+			<EditText android:id="@+id/password_input"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/password" android:hint="请输入您的密码"
+				android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+				android:password="true" android:singleLine="true" android:maxLength="100">
+			</EditText>
+		</RelativeLayout>
+		
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingBottom="10dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingRight="10dp"
+				android:layout_alignParentLeft="true" android:id="@+id/name">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="昵称"
+					android:textColor="#cc000000" android:textSize="20dp">
+				</TextView>
+			</LinearLayout>
+			<EditText android:id="@+id/name_input" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_toRightOf="@id/name"
+				android:hint="请输入您的昵称" android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+				android:singleLine="true" android:maxLength="100">
+			</EditText>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingBottom="10dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingRight="10dp"
+				android:layout_alignParentLeft="true" android:id="@+id/gender">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="性别"
+					android:textColor="#cc000000" android:textSize="20dp">
+				</TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:layout_toRightOf="@id/gender">
+				<Button android:id="@+id/womenbtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/local_womenbtn">
+				</Button>
+				<Button android:id="@+id/manbtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/local_manbtn">
+				</Button>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingBottom="10dp"
+			android:visibility="gone">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingRight="10dp"
+				android:layout_alignParentLeft="true" android:id="@+id/icon">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="头像"
+					android:textColor="#cc000000" android:textSize="20dp">
+				</TextView>
+			</LinearLayout>
+			<ImageView android:id="@+id/iconimage"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/icon" android:background="@drawable/local_icon_women">
+			</ImageView>
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center_horizontal"
+			android:paddingTop="10dp">
+			<Button android:id="@+id/overbtn" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/local_overbtn_0">
+			</Button>
+		</LinearLayout>
+
+	</LinearLayout>
+  </ScrollView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@drawable/mainpagebg" android:orientation="vertical">
+
+
+	<com.cmmobi.icuiniao.ui.view.MainMenu
+		android:id="@+id/mainmenu" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/commoditybg">
+	</com.cmmobi.icuiniao.ui.view.MainMenu>
+
+	<LinearLayout android:id="@+id/lcoquetrypage"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+	</LinearLayout>
+
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/titlebarbg" android:orientation="horizontal"
+		android:paddingLeft="10dp" android:paddingRight="10dp">
+		<Button android:id="@+id/titlebar_sendbtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/sendbtn_0"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:visibility="invisible">
+		</Button>
+		<Button android:id="@+id/titlebar_editbtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/title_editbtn_0"
+			android:visibility="invisible">
+		</Button>
+		<Button android:id="@+id/titlebar_menubutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_menubutton1_0"
+			android:visibility="visible">
+		</Button>
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:paddingTop="10dp"
+			android:gravity="center_horizontal" android:layout_toRightOf="@id/titlebar_editbtn"
+			android:layout_toLeftOf="@id/titlebar_menubutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="我的撒娇" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

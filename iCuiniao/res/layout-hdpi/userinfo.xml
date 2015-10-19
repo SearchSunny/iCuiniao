@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:paddingLeft="20dp" android:paddingRight="20dp"
+	android:paddingTop="20dp" android:paddingBottom="60dp"
+	android:background="#ffffffff" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingRight="5dp">
+			<TextView android:id="@+id/userinfo_name"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="" android:textColor="#cc000000" android:textSize="20dp"
+				android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingRight="5dp"
+			android:layout_gravity="center">
+			<ImageView android:id="@+id/userinfo_gender"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+			</ImageView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingRight="5dp"
+			android:layout_gravity="center">
+			<TextView android:id="@+id/userinfo_addr"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="" android:textColor="#cc000000" android:textSize="16dp"
+				android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingTop="10dp">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+			<LinearLayout android:id="@+id/userinfo_likebtn"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="@drawable/buttonbg_0" android:padding="5dp"
+				android:orientation="horizontal" android:gravity="center">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/likebtn">
+				</ImageView>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingLeft="20dp"
+					android:paddingRight="10dp">
+					<TextView android:id="@+id/userinfo_likebtntext"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="" android:textColor="#cc000000" android:textSize="20dp" android:textStyle="bold">
+					</TextView>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<!--
+			LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingRight="10dp"
+			android:layout_alignParentLeft="true"> <LinearLayout
+			android:id="@+id/userinfo_likebtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonbg_0" android:paddingLeft="10dp"
+			android:paddingRight="10dp" android:paddingTop="10dp"
+			android:paddingBottom="10dp" android:orientation="horizontal">
+			<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/likebtn"> </ImageView> <LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingLeft="10dp"
+			android:paddingRight="10dp"> <TextView
+			android:id="@+id/userinfo_likebtntext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text=""
+			android:textColor="#cc000000" android:textSize="25dp"> </TextView>
+			</LinearLayout> </LinearLayout> </LinearLayout
+		-->
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingLeft="10dp"
+			android:layout_alignParentRight="true" android:visibility="gone">
+			<LinearLayout android:id="@+id/userinfo_formbtn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/buttonbg_0" android:paddingLeft="10dp"
+				android:paddingRight="10dp" android:paddingTop="10dp"
+				android:paddingBottom="10dp" android:orientation="horizontal">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/formbtn">
+				</ImageView>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingLeft="10dp"
+					android:paddingRight="10dp">
+					<TextView android:id="@+id/userinfo_formtext"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="" android:textColor="#cc000000" android:textSize="25dp">
+					</TextView>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

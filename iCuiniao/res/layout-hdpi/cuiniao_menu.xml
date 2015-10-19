@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <LinearLayout android:id="@+id/cuiniaoList_back"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_gravity="bottom" android:background="@drawable/share_bg"
+		android:orientation="vertical"
+		android:padding="10dip">
+
+		<TextView android:id="@+id/cuiniaoList_title" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="aa"
+			android:textColor="#ffffffff" android:textSize="20dip"
+			android:layout_gravity="center" android:gravity="center_horizontal"
+			android:paddingBottom="10dip">
+		</TextView>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="match_parent" android:paddingBottom="10dip">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="match_parent" android:background="@drawable/share_whitebg_b"
+				android:paddingLeft="4dip" android:paddingRight="4dip"
+				android:paddingTop="4dip" android:paddingBottom="4dip">
+				<ListView
+					android:id="@+id/cuiniao_list" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:cacheColorHint="@color/transparent_all"
+					android:listSelector="@drawable/share_list_bg"
+					android:dividerHeight="1px"
+					android:divider="#FFb5b5b5">
+				</ListView>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+  
+</LinearLayout>

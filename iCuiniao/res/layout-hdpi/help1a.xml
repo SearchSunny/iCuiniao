@@ -1,0 +1,37 @@
+<LinearLayout android:id="@+id/help1a"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffffff">
+
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingTop="60dp"
+				android:layout_centerHorizontal="true" android:gravity="center_horizontal">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/help1_1">
+				</ImageView>
+			</LinearLayout>
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/help1_2"
+				android:layout_alignParentBottom="true">
+			</ImageView>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingBottom="15dp"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/help1_p">
+				</ImageView>
+			</LinearLayout>
+		</RelativeLayout>
+	</FrameLayout>
+
+</LinearLayout>

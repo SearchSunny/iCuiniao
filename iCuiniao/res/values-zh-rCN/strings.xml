@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">翠鸟</string>
+    <!-- 手势提示 -->
+    <string name="gesture_title">手势面板</string>
+    <string name="gesture_load_false">手势文件加载失败</string>
+    
+    <!-- 网络状态提示 -->
+    <string name="reminder_no_net">网络连接不存在\n请检查网络连接是否正常</string>
+    <string name="net_busying">网络繁忙\n请稍候重试</string>
+    <string name="wait">处理中,请稍候...</string>
+    
+    <!-- 分享 -->
+	<string name="share_title">分享</string>
+	<string name="share_item_weibo">微博</string>
+	<string name="share_item_qq">腾讯空间</string>
+	<string name="share_item_wx">微信</string>
+	<string name="share_item_renren">人人</string>
+	<string name="share_item_email">邮件</string>
+	<string name="share_item_sms">短信</string>
+	<string name="share_item_pengyou">朋友圈</string>
+	<!-- 新浪微博需要用的 -->
+	<string name="attention">注意</string>
+    <string name="delete_all">是否要删除这条微博？</string>
+    <string name="ok">是</string>
+    <string name="cancel">否</string>
+    <string name="send">发送</string>
+    <string name="close">关闭</string>
+    <string name="share_dialog_title">新浪微博</string>
+    <string name="please_login">请登录！</string>
+    <string name="send_sucess">分享成功！</string>
+    <string name="send_failed">分享失败！</string>
+    <string name="del_pic">是否删除图片？</string>
+    <!-- QQ需要用到的 -->
+    <string name="qq_share_dialog_title">QQ空间</string>
+    <!-- 微信用到的 -->
+    <string name="wx_share_title">翠鸟分享</string>
+    <string name="wx_share_err_ok">分享成功</string>
+    <string name="wx_share_err_user_cancel">用户取消</string>
+    <string name="wx_share_err_sent_failed">发送失败</string>
+    <string name="wx_share_err_err_unsupport">不支持错误</string>
+    
+    <string name="titlebar_text_all">首页</string>
+    <string name="titlebar_text_discount">折扣</string>
+    <string name="titlebar_text_recommend">推荐</string>
+    <string name="titlebar_text_form">晒单</string>
+    <string name="titlebar_text_activities">活动</string>
+    <string name="titlebar_text_mylike">我的喜欢</string>
+    <string name="titlebar_text_mylooked">我看过的</string>
+    <string name="titlebar_text_userlike">TA的喜欢</string>
+    <string name="titlebar_text_userlooked">TA看过的</string>
+    
+    <string name="share_invite">时尚编辑精心挑选的宝贝，说不定是你正在寻找的，来吧，翠鸟给你想要的宝贝！</string>
+</resources>

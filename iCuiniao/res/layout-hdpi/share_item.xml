@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:id="@+id/shareItem" android:background="@drawable/share_item_0"
+	android:orientation="horizontal" android:gravity="center_vertical">
+
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingLeft="20dip" android:paddingRight="20dip">
+		<ImageView android:id="@+id/shareItem_icon"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/listitem_qq">
+		</ImageView>
+	</RelativeLayout>
+	<TextView android:id="@+id/shareItem_text"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="腾讯空间" android:textColor="#cc000000" android:textSize="20dip"
+		android:layout_gravity="center_vertical"></TextView>
+
+</LinearLayout>

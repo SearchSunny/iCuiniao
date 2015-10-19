@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iCuiniao</string>
+    <!-- 手势提示 -->
+    <string name="gesture_title">Gesture Window</string>
+    <string name="gesture_load_false">The gesture files load Failure</string>
+    
+    <!-- 网络状态提示 -->
+    <string name="reminder_no_net">No connect internet\nplease check</string>
+    <string name="net_busying">Net busying now\nplease try again later!</string>
+    <string name="wait">Processing, please wait</string>
+    
+    <!-- 分享 -->
+	<string name="share_title">Share</string>
+	<string name="share_item_weibo">Weibo</string>
+	<string name="share_item_qq">QQ</string>
+	<string name="share_item_wx">WX</string>
+	<string name="share_item_renren">Renren</string>
+	<string name="share_item_email">Email</string>
+	<string name="share_item_sms">Message</string>
+	<string name="share_item_pengyou">WXpengyou</string>
+	<!-- 新浪微博需要用的 -->
+	<string name="attention">Notice</string>
+    <string name="delete_all">Are you sure delete it?</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
+    <string name="send">Send</string>
+    <string name="close">Close</string>
+    <string name="share_dialog_title">Sina Weibo</string>
+    <string name="please_login">Login</string>
+    <string name="send_sucess">Share successfull</string>
+    <string name="send_failed">Share Failure</string>
+    <string name="del_pic">Are you sure delete the image?</string>
+    <!-- QQ需要用到的 -->
+    <string name="qq_share_dialog_title">QQzone</string>
+    <!-- 微信用到的 -->
+    <string name="wx_share_title">Share Cuiniao</string>
+    <string name="wx_share_err_ok">Err Ok</string>
+    <string name="wx_share_err_user_cancel">User Cancel</string>
+    <string name="wx_share_err_sent_failed">Sent Failed</string>
+    <string name="wx_share_err_unsupport">Err Unsupprot</string>
+    
+    <string name="titlebar_text_all">MainPage</string>
+    <string name="titlebar_text_discount">Discount</string>
+    <string name="titlebar_text_recommend">Recommend</string>
+    <string name="titlebar_text_form">Form</string>
+    <string name="titlebar_text_activities">Activities</string>
+    <string name="titlebar_text_mylike">Mylikes</string>
+    <string name="titlebar_text_mylooked">Mylooked</string>
+    <string name="titlebar_text_userlike">TA likes</string>
+    <string name="titlebar_text_userlooked">TA looked</string>
+    
+    <string name="share_invite">Carefully selected fashion editors baby, maybe you are looking for, come on, Kingfisher to what you want baby!</string>
+    <item type="id" name="tag_first"></item>
+	<item type="id" name="tag_second"></item>
+</resources>

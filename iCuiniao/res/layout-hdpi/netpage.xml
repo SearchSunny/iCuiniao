@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:icuiniao="http://schemas.android.com/apk/res/com.cmmobi.icuiniao"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<LinearLayout android:id="@+id/lpopupFwRightView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/lpopupFwRightView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<com.cmmobi.icuiniao.ui.view.PopupMenu
+			android:id="@+id/popupmenu" android:layout_width="fill_parent"
+			android:layout_height="61dip" android:layout_gravity="bottom"
+			android:paddingLeft="20px" android:paddingRight="20px">
+
+			<ImageButton android:id="@+id/popupmenu_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/anniu_0">
+			</ImageButton>
+
+			<com.cmmobi.icuiniao.ui.view.PopupFwRightView
+				android:id="@+id/popupFwRightView" android:layout_width="fill_parent"
+				android:layout_height="61dip" icuiniao:bg_leftResID="@drawable/bg_left"
+				icuiniao:bg_middleResID="@drawable/bg_middle"
+				icuiniao:bg_rightResID="@drawable/bg_right" icuiniao:animation="true"
+				icuiniao:renderSpeed="40" android:visibility="invisible">
+			</com.cmmobi.icuiniao.ui.view.PopupFwRightView>
+
+		</com.cmmobi.icuiniao.ui.view.PopupMenu>
+	</LinearLayout>
+
+</FrameLayout>

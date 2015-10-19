@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:background="@drawable/mainpagebg">
+	<!-- lyb -->
+	<ListView android:id="@+id/list_coquetry"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:cacheColorHint="@color/transparent_all" android:listSelector="@color/transparent_all"
+		android:divider="@null"				
+		>
+	</ListView>
+	
+</LinearLayout>

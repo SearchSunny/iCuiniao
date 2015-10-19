@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/mainpagebg"
+		android:orientation="vertical">
+
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/commoditybg_line" android:orientation="horizontal"
+			android:padding="10dp" android:layout_alignParentTop="true">
+
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton_0">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/savebtn_0">
+			</Button>
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+				android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="详细个人信息" android:textColor="#ccffffff"
+					android:textSize="16dp" android:paddingRight="5dp"
+					android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<ScrollView android:id="@+id/scrollview"
+		android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:scrollbars="none">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/name"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="        昵称"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/name_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/name" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:maxLength="100"
+						android:layout_centerVertical="true">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:padding="10dp"
+					android:background="@drawable/selectbg_line">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/icon"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="        头像"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<ImageView android:id="@+id/iconimage"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/icon" android:background="@drawable/usericonbg"
+						android:layout_centerVertical="true">
+					</ImageView>
+					<Button android:id="@+id/seticonbtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/iconimage"
+						android:text="设置头像" android:textColor="#ff7c7c7c"
+						android:textSize="18dp" android:background="@color/transparent_all"
+						android:paddingLeft="10dp" android:layout_centerVertical="true">
+					</Button>
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/realname"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="真实姓名"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/realname_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/realname" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:maxLength="100"
+						android:layout_centerVertical="true">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/email"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="电子邮箱"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/email_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/email" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="textEmailAddress"
+						android:maxLength="100" android:layout_centerVertical="true">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<TextView android:id="@+id/gender_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="        性别" android:textColor="#cc000000"
+						android:textSize="20dp" android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true">
+					</TextView>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/gender_text"
+						android:gravity="center" android:orientation="horizontal"
+						android:paddingTop="1dp" android:paddingBottom="1dp">
+						<Button android:id="@+id/genderbtn_l" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="女"
+							android:textColor="#ffffffff" android:textSize="20dp"
+							android:background="@drawable/local_kgbtn_l_f"
+							android:layout_centerVertical="true">
+						</Button>
+						<Button android:id="@+id/genderbtn_r" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="男"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:background="@drawable/local_kgbtn_r"
+							android:layout_centerVertical="true">
+						</Button>
+					</LinearLayout>
+					<!--
+						LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/gender">
+						<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text=" 性别"
+						android:textColor="#ffffffff" android:textSize="20dp"> </TextView>
+						</LinearLayout> <EditText android:id="@+id/gender_input"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/gender" android:hint="如:男或女"
+						android:textSize="20dp"
+						android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:maxLength="100"> </EditText
+					-->
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/birthday"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="        生日"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<Button android:id="@+id/birthday_btn" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/birthday"
+						android:text="点击选择输入" android:textSize="20dp" android:textColor="#cc000000"
+						android:background="@drawable/poplike_inputbg"
+						android:layout_centerVertical="true">
+					</Button>
+					<!--
+						EditText android:id="@+id/birthday_input"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/birthday" android:hint="如:20120701"
+						android:textSize="20dp"
+						android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:maxLength="100"> </EditText
+					-->
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/area"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="        地区"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/area_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/area" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:maxLength="100"
+						android:layout_centerVertical="true">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/addr"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="联系地址"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/addr_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/addr" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:maxLength="100" android:layout_centerVertical="true">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/phone"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="    手机号"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/phone_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/phone" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="number"
+						android:maxLength="11" android:layout_centerVertical="true">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/education"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="教育程度"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<Button android:id="@+id/education_btn"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/education" android:text="点击选择输入"
+						android:textSize="20dp" android:textColor="#cc000000"
+						android:background="@drawable/poplike_inputbg"
+						android:layout_centerVertical="true">
+					</Button>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/money"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="    月收入"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<Button android:id="@+id/money_btn" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/money"
+						android:text="点击选择输入" android:textSize="20dp" android:textColor="#cc000000"
+						android:background="@drawable/poplike_inputbg"
+						android:layout_centerVertical="true">
+					</Button>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<TextView android:id="@+id/marry_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="婚姻状况" android:textColor="#cc000000"
+						android:textSize="20dp" android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true">
+					</TextView>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/marry_text"
+						android:gravity="center" android:orientation="horizontal"
+						android:paddingTop="1dp" android:paddingBottom="1dp">
+						<Button android:id="@+id/unmarrybtn" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="未婚"
+							android:textColor="#ffffffff" android:textSize="20dp"
+							android:background="@drawable/local_kgbtn_l_f"
+							android:layout_centerVertical="true">
+						</Button>
+						<Button android:id="@+id/marrybtn" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="已婚"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:background="@drawable/local_kgbtn_r"
+							android:layout_centerVertical="true">
+						</Button>
+					</LinearLayout>
+					<!--
+						LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/marry">
+						<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="婚姻状况"
+						android:textColor="#ffffffff" android:textSize="20dp"> </TextView>
+						</LinearLayout> <LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_toRightOf="@id/marry"> <Button
+						android:id="@+id/unmarrybtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/unmarry_btn_f"> </Button> <Button
+						android:id="@+id/marrybtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/marry_btn"> </Button> </LinearLayout
+					-->
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/occupation"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="        职业"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<Button android:id="@+id/occupation_btn"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/occupation" android:text="点击选择输入"
+						android:textSize="20dp" android:textColor="#cc000000"
+						android:background="@drawable/poplike_inputbg"
+						android:layout_centerVertical="true">
+					</Button>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/interest"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="        兴趣"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<Button android:id="@+id/interest_btn" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/interest"
+						android:text="点击选择输入" android:textSize="20dp" android:textColor="#cc000000"
+						android:background="@drawable/poplike_inputbg"
+						android:layout_centerVertical="true">
+					</Button>
+				</RelativeLayout>
+
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="gone">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

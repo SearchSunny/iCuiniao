@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/mainpagebg">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:orientation="vertical" android:layout_above="@id/rinput">
+			<RelativeLayout android:id="@+id/rtitlebar"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="@drawable/commoditybg_line" android:orientation="horizontal"
+				android:padding="10dp">
+
+				<Button android:id="@+id/titlebar_backbutton"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true" android:background="@drawable/titlebar_backbutton_0">
+				</Button>
+
+				<Button android:id="@+id/titlebar_menubutton"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true" android:background="@drawable/titlebar_manage_0"
+					android:visibility="invisible">
+				</Button>
+
+				<LinearLayout android:id="@+id/titlebar_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+					android:layout_toRightOf="@id/titlebar_backbutton"
+					android:layout_toLeftOf="@id/titlebar_menubutton">
+					<TextView android:id="@+id/titlebar_titletext"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="管理" android:textColor="#ccffffff" android:textSize="16dp"
+						android:paddingRight="5dp" android:singleLine="true">
+					</TextView>
+				</LinearLayout>
+
+			</RelativeLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+
+	<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:paddingTop="80dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:background="@drawable/poplike_inputbg">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="5dp" >
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/realname"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="消息置顶"
+							android:textColor="#cc000000" android:textSize="15dp">
+						</TextView>
+					</LinearLayout>
+					
+					<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					    android:layout_centerHorizontal="true" android:layout_centerVertical="true" 
+					    android:layout_alignParentRight="true">
+					<com.cmmobi.icuiniao.ui.view.SlipButton
+	            			android:id="@+id/messageTop"
+	            			android:layout_width="80dip"
+	            			android:layout_height="27dip"
+	            			/>
+					</LinearLayout>
+					
+				</RelativeLayout>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="20dp" android:orientation="vertical">
+			</LinearLayout>
+
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:background="@drawable/poplike_inputbg">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="5dp" android:id="@+id/remarkBtn">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:paddingTop="5dp" android:paddingBottom="5dp"
+						android:layout_alignParentLeft="true" android:id="@+id/occupation"
+						android:layout_centerVertical="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="备注       "
+							android:textColor="#cc000000" android:textSize="15dp">
+						</TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@id/occupation"
+					    android:layout_centerHorizontal="true" >
+					<EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:id="@+id/remark_str" android:text=" " android:paddingRight="20dp"
+						android:singleLine="true" android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" android:background="@drawable/poplike1_inputbg"
+						android:maxLength="100" android:textColor="#cc000000">
+						
+					</EditText>
+					</LinearLayout>
+				</RelativeLayout>
+			</LinearLayout>
+			
+			
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="20dp" android:orientation="vertical">
+			</LinearLayout>
+			
+			
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  
+			             android:gravity="center_horizontal">
+						<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:background="@drawable/clearmessage" android:id="@+id/clearMessage">
+						</Button>
+			</LinearLayout>
+		
+			
+			
+		</LinearLayout>
+
+			
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

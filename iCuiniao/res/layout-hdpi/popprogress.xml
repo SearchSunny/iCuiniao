@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:id="@+id/lPopProGress" 
+	android:gravity="center"
+	android:background="#00000000"
+	>
+
+	<ProgressBar android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/proGress"
+		android:paddingLeft="10px" 		
+		/>	
+	<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingLeft="10px" android:paddingRight="10px"
+			android:text="@string/wait" android:textSize="16dip"/>
+</LinearLayout>

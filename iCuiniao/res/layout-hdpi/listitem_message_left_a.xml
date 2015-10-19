@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:padding="10dp" android:clickable="false" android:orientation="vertical"
+	>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/ltime"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingBottom="10dp" android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" android:visibility="gone">
+			<TextView android:id="@+id/time" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="05-16 16:52"
+				android:textColor="#ff7c7c7c" android:textSize="14dp" android:background="@drawable/imdate"
+				android:paddingTop="6dp" android:gravity="center" android:paddingBottom="6dp"
+				android:paddingLeft="8dp" android:paddingRight="8dp">
+			</TextView>
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@id/ltime">
+			<ImageView android:id="@+id/listItem_c_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/usericonbg"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+			</ImageView>
+			
+			<RelativeLayout android:id="@+id/lmsg"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/listItem_c_icon" android:background="@drawable/messagebox_my_a" 
+				android:layout_marginLeft="6dp">
+				
+				<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+								 android:layout_marginLeft="10dp" android:id="@+id/relatveA"
+								 android:layout_alignParentLeft="true">
+				<TextView android:id="@+id/title" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="商品标题"
+					android:textColor="#ff5469AA" android:textSize="16dp" 
+					android:ellipsize="end" android:singleLine="true">
+				</TextView>
+				</RelativeLayout>
+				
+				<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+								 android:layout_marginLeft="10dp" android:id="@+id/relatveB"
+								 android:layout_below="@+id/relatveA"
+								 android:layout_alignParentLeft="true">
+				<ImageView android:id="@+id/msgImage" android:layout_width="50dp"
+						    android:layout_height="50dp"/>
+			    </RelativeLayout>	
+			        
+				<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_toRightOf="@+id/relatveB" android:layout_below="@+id/relatveA" 
+								android:padding="5dp">
+				<TextView android:id="@+id/cmsg" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="商品基本描述"
+					android:textColor="#cc000000" android:textSize="16dp" 
+					 android:ellipsize="end" android:maxLength="15">
+				</TextView>
+				</RelativeLayout>
+				
+			</RelativeLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+	
+	
+	
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="20dp">
+		<LinearLayout android:id="@+id/lltime"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingBottom="5dp" android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" android:visibility="gone"
+			>
+			<TextView android:id="@+id/mtime" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text=""
+				android:textColor="#ff7c7c7c" android:textSize="14dp" android:background="@drawable/imdate">
+			</TextView>
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@id/lltime">
+			<ImageView android:id="@+id/listItem_m_icon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/usericonbg"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/listItem_m_icon" android:layout_centerVertical="true" 
+				android:background="@drawable/messagebox_my_a" android:gravity="center_vertical"
+				android:layout_marginLeft="6dp">
+				<TextView android:id="@+id/msg" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text=""
+					android:textColor="#cc000000" android:textSize="16dp">
+				</TextView>
+			</LinearLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+	
+	
+	
+
+</LinearLayout>

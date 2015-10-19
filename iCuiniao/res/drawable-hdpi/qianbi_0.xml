@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--点击时的图片背景 -->
+	<item android:state_pressed="true" 
+	android:drawable="@drawable/qianbi2"/>
+	
+	<item android:state_focused="true" android:state_enabled="true"
+		android:drawable="@drawable/qianbi2" />
+	<!-- 有响应事件时的图片背景 -->
+    <item android:state_enabled="true"
+        android:drawable="@drawable/qianbi1" />
+    <!-- 获得焦点时的图片背景 -->    
+	<item android:state_focused="true" 
+		android:drawable="@drawable/qianbi2" />
+
+</selector>

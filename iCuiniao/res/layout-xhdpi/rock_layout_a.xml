@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/rock">
+
+	<com.cmmobi.icuiniao.ui.view.MainMenu
+		android:id="@+id/mainmenu" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/commoditybg">
+	</com.cmmobi.icuiniao.ui.view.MainMenu>
+
+	<LinearLayout android:id="@+id/rockpage"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarbg" android:orientation="horizontal"
+			android:layout_alignParentTop="true" android:paddingLeft="10dp"
+			android:paddingRight="10dp">
+			<Button android:id="@+id/titlebar_leftmenu"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_menubutton_0"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:visibility="invisible">
+			</Button>
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton_0">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0">
+			</Button>
+			<ImageView android:id="@+id/messageImageId" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:background="@drawable/dian"
+						android:layout_toLeftOf="@id/titlebar_menubutton" android:layout_alignParentRight="true" 
+						android:layout_marginTop="8dip" android:layout_marginRight="2dip"
+						android:visibility="gone"></ImageView>
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+				android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="摇一下" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical"
+			android:background="@drawable/rockbg">
+			<!-- 赠送按钮 -->
+			<RelativeLayout android:id="@+id/rock_givelayout"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="40dp">
+				<Button android:id="@+id/rock_give_btn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/rock_givebtn_0"
+					android:layout_alignParentRight="true">
+				</Button>
+			</RelativeLayout>
+			<!-- 鸟 -->
+			<RelativeLayout android:id="@+id/rock_birdlayout"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="110dp">
+				<ImageView android:id="@+id/rock_bird"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/rock_birdgif1"
+					android:layout_centerHorizontal="true">
+				</ImageView>
+			</RelativeLayout>
+			<!-- 我看过的喜欢的按钮布局 -->
+			<RelativeLayout android:id="@+id/rock_likelooklayout"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="110dp" android:visibility="invisible">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:orientation="horizontal"
+					android:layout_centerHorizontal="true">
+					<ImageView android:id="@+id/rock_likebtn"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/rock_mylikedbtn">
+					</ImageView>
+					<ImageView android:id="@+id/rock_lookbtn"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/rock_mylookedbtn">
+					</ImageView>
+				</LinearLayout>
+			</RelativeLayout>
+			<!-- 文本1 -->
+			<RelativeLayout android:id="@+id/rock_textlayout1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="270dp">
+				<TextView android:id="@+id/rock_text1"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true" android:text="主人，您今天没有摇一下机会了哦，"
+					android:textColor="#ccffffff" android:textSize="16dp">
+				</TextView>
+			</RelativeLayout>
+			<!-- 文本2 -->
+			<RelativeLayout android:id="@+id/rock_textlayout2"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="290dp">
+				<TextView android:id="@+id/rock_text2"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true" android:text="请明天再来！"
+					android:textColor="#ccffffff" android:textSize="16dp">
+				</TextView>
+			</RelativeLayout>
+			<!-- 倒计时信息框 -->
+			<RelativeLayout android:id="@+id/rock_infolayout"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="340dp" android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/rock_textbg"
+					android:orientation="horizontal" android:gravity="center_vertical"
+					android:paddingLeft="20dp">
+					<TextView android:id="@+id/time" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="90"
+						android:textColor="#ccffffff" android:textSize="34dp">
+					</TextView>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="vertical"
+						android:paddingLeft="5dp" android:paddingRight="32dp">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="分钟之后，"
+							android:textColor="#ccffffff" android:textSize="12dp">
+						</TextView>
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="前面的商品会消失"
+							android:textColor="#ccffffff" android:textSize="12dp">
+						</TextView>
+					</LinearLayout>
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/rock_split">
+					</ImageView>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="vertical"
+						android:gravity="center_horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="请尽快标记"
+							android:textColor="#ccffffff" android:textSize="12dp">
+						</TextView>
+						<LinearLayout android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:paddingTop="3dp">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:background="@drawable/rock_heart">
+							</ImageView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+			<!-- 倒计时信息框2 -->
+			<RelativeLayout android:id="@+id/rock_infolayout1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="340dp" android:paddingLeft="10dp"
+				android:paddingRight="10dp" android:visibility="invisible">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/rock_textbg"
+					android:orientation="horizontal" android:gravity="center"
+					android:paddingLeft="10dp">
+
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/rock_wring">
+					</ImageView>
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="vertical"
+						android:gravity="center_horizontal">
+						<TextView android:id="@+id/rock_infotext1"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="上次的商品已消失，" android:textColor="#ccff0000"
+							android:textSize="16dp">
+						</TextView>
+						<TextView android:id="@+id/rock_infotext2"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="请摇一下找到新商品。" android:textColor="#ccff0000"
+							android:textSize="16dp">
+						</TextView>
+					</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+			<!-- 摇一下图标 -->
+			<RelativeLayout android:id="@+id/rock_iconlayout"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="440dp">
+				<ImageView android:id="@+id/rock_icon"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/rockicon"
+					android:layout_centerHorizontal="true">
+				</ImageView>
+			</RelativeLayout>
+
+		</FrameLayout>
+	</LinearLayout>
+</FrameLayout>

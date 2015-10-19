@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/rock">
+
+	<com.cmmobi.icuiniao.ui.view.MainMenu
+		android:id="@+id/mainmenu" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/commoditybg">
+	</com.cmmobi.icuiniao.ui.view.MainMenu>
+
+	<LinearLayout android:id="@+id/rockpage"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarbg" android:orientation="horizontal"
+			android:layout_alignParentTop="true" android:paddingLeft="10dp"
+			android:paddingRight="10dp">
+			<Button android:id="@+id/titlebar_leftmenu"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_menubutton_0"
+				android:layout_gravity="center_vertical" android:visibility="invisible">
+			</Button>
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton_0">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0">
+			</Button>
+			<ImageView android:id="@+id/messageImageId" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:background="@drawable/dian"
+						android:layout_toLeftOf="@id/titlebar_menubutton" android:layout_alignParentRight="true" 
+						android:layout_marginTop="8dip" android:layout_marginRight="2dip"
+						android:visibility="gone"></ImageView>
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+				android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="摇一下" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical"
+			android:background="@drawable/rockbg">
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingTop="50dp">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/rock_bird"
+					android:layout_centerHorizontal="true">
+				</ImageView>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="120dp">
+				<Button android:id="@+id/rockbtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/rock_backbtn1_0"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true">
+				</Button>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="70dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true" android:text="请登陆或注册,变身为翠鸟主人,"
+					android:textColor="#ccffffff" android:textSize="16dp">
+				</TextView>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="50dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true" android:text="获得更多专属特权！"
+					android:textColor="#ccffffff" android:textSize="16dp">
+				</TextView>
+			</RelativeLayout>
+		</FrameLayout>
+
+	</LinearLayout>
+
+</FrameLayout>

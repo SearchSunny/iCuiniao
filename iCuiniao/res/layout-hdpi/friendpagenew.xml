@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/commoditybg">
+	<com.cmmobi.icuiniao.ui.view.MainMenu
+		android:id="@+id/mainmenu" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</com.cmmobi.icuiniao.ui.view.MainMenu>
+	<LinearLayout android:id="@+id/linearPage"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:background="@drawable/mainpagebg">
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarfloatbg" android:orientation="horizontal"
+			android:paddingLeft="10dp" android:paddingRight="10dp">
+			<Button android:id="@+id/titlebar_leftmenu"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_menubutton_0"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:visibility="invisible">
+			</Button>
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton1_0"
+				android:visibility="invisible">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton1_0">
+			</Button>
+
+			<ImageView android:id="@+id/messageImageId" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:background="@drawable/dian"
+						android:layout_toLeftOf="@id/titlebar_menubutton" android:layout_alignParentRight="true" 
+						android:layout_marginTop="8dip" android:layout_marginRight="2dip"
+						android:visibility="gone"></ImageView>
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true" 
+				android:gravity="center" android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton"
+				android:background="@drawable/titleback">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="我的好友" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+				<ImageView android:id="@+id/titlebar_titleimage"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/titlebar_sanjiao"
+					android:layout_gravity="center_vertical">
+				</ImageView>
+			</LinearLayout>
+		
+
+		</RelativeLayout>
+
+		<LinearLayout android:id="@+id/friendOutLinear"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			>
+			<LinearLayout android:id="@+id/friendLinear"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:orientation="vertical" 
+				android:visibility="visible"
+				android:gravity="center_horizontal"	
+				android:paddingLeft="10dp" android:paddingRight="10dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="10dp"
+					android:layout_gravity="center_horizontal"					
+					>
+				<ImageView android:id="@+id/searchbox_left"					
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/searchbox_left"
+					/> 
+				<EditText android:id="@+id/searchbox_center"					
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/searchbox_center" 
+					android:inputType="text"
+					android:imeOptions="actionDone"
+					android:singleLine="true" android:ems="10"/>
+				<ImageView android:id="@+id/searchbox_right"					
+					 android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/searchbox_right1"
+					/> 	
+				</LinearLayout>
+				<com.cmmobi.icuiniao.ui.view.ListviewForRefresh
+					android:id="@+id/friendlist" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:layout_marginTop="10dp"					
+					android:cacheColorHint="@color/transparent_all"
+					android:fastScrollEnabled="true" android:focusable="false"
+					android:clickable="true" android:dividerHeight="1px"
+					android:divider="#FFc6c7cb" android:scrollbars="none"
+					android:listSelector="@android:color/transparent" 
+					android:fadingEdge="none"
+					/>
+				<TextView 
+					android:id="@+id/txtips" 
+					 android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:text="没有匹配的好友" 
+					android:textColor="#ff000000"
+					android:textSize="16sp"
+					android:visibility="gone"
+					android:layout_marginTop="20dp"
+					android:gravity="center"/>
+			</LinearLayout>
+			<RelativeLayout android:id="@+id/invateLinear"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				 android:visibility="gone"
+				>
+				<ImageView android:id="@+id/empimg"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/emptybgimg"
+				android:layout_alignParentBottom="true"
+				
+				 />
+				 <RelativeLayout android:layout_above="@id/empimg"
+				 android:layout_width="fill_parent" android:layout_height="fill_parent"
+				>
+				<Button android:id="@+id/invateBtn"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/call1" 					
+					android:layout_centerInParent="true">
+				</Button>	
+				</RelativeLayout>			
+			</RelativeLayout>
+			
+			<LinearLayout android:id="@+id/blackTipLinear"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:gravity="center" android:visibility="gone"
+				>				
+				<TextView android:id="@+id/blackTipText" 
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="还没有人被你拉入黑名单呢" android:textSize="16sp" 
+					android:textColor="#ff000000"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	
+
+
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

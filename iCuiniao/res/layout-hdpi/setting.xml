@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout 
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg" android:orientation="vertical">
+
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<com.cmmobi.icuiniao.ui.view.MainMenu
+			android:id="@+id/mainmenu" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="@drawable/commoditybg">
+		</com.cmmobi.icuiniao.ui.view.MainMenu>
+
+		<LinearLayout android:id="@+id/settingpage"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:background="@drawable/mainpagebg">
+
+				<RelativeLayout android:id="@+id/rtitlebar"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/titlebarbg"
+					android:orientation="horizontal" 
+					android:layout_alignParentTop="true"
+					android:paddingLeft="10dp" android:paddingRight="10dp">
+					<Button android:id="@+id/titlebar_leftmenu"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/titlebar_menubutton_0"
+						android:layout_gravity="center_vertical" android:visibility="invisible">
+					</Button>
+					<Button android:id="@+id/titlebar_backbutton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true" android:background="@drawable/titlebar_backbutton_0"
+						android:visibility="invisible">
+					</Button>
+
+					<Button android:id="@+id/titlebar_menubutton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0">
+					</Button>
+
+					<LinearLayout android:id="@+id/titlebar_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+						android:layout_toRightOf="@id/titlebar_backbutton"
+						android:layout_toLeftOf="@id/titlebar_menubutton">
+						<TextView android:id="@+id/titlebar_titletext"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="设置" android:textColor="#ccffffff" android:textSize="16dp"
+							android:paddingRight="5dp" android:singleLine="true">
+						</TextView>
+					</LinearLayout>
+
+				</RelativeLayout>
+
+			<ScrollView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:scrollbars="none">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<RelativeLayout android:id="@+id/nickNameSet"
+					android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:padding="10dp"
+						android:background="@drawable/selectbg_line_0">
+						<LinearLayout android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:paddingRight="10dp"
+							android:paddingTop="5dp" android:paddingBottom="5dp"
+							android:layout_alignParentLeft="true" android:id="@+id/name">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:text="昵称"
+								android:textColor="#cc000000" android:textSize="20dp">
+							</TextView>
+						</LinearLayout>
+						<TextView android:id="@+id/name_input"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:layout_toRightOf="@id/name" android:text="hh"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:singleLine="true" android:layout_centerVertical="true">
+						</TextView>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/headSetting"
+					android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:padding="10dp"
+						android:background="@drawable/selectbg_line_0">
+						<LinearLayout android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:paddingRight="10dp"
+							android:layout_alignParentLeft="true" android:id="@+id/icon"
+							android:layout_centerVertical="true">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:text="头像"
+								android:textColor="#cc000000" android:textSize="20dp"
+								android:clickable="false">
+							</TextView>
+						</LinearLayout>
+						<ImageView android:id="@+id/iconimage"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_toRightOf="@id/icon" android:background="@drawable/usericonbg"
+							android:layout_centerVertical="true">
+						</ImageView>
+						<Button android:id="@+id/seticonbtn" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_toRightOf="@id/iconimage"
+							android:text="设置头像" android:textColor="#ff7c7c7c"
+							android:textSize="18dp" android:background="@color/transparent_all"
+							android:paddingLeft="10dp" android:layout_centerVertical="true"
+							android:clickable="false">
+						</Button>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/moresetting"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="15dp" android:paddingBottom="15dp"
+						android:background="@drawable/selectbg_line_0">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="详细个人信息"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true">
+						</TextView>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:background="@drawable/setting_point"
+							android:layout_centerVertical="true">
+						</ImageView>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/addrsetting"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="15dp" android:paddingBottom="15dp"
+						android:background="@drawable/selectbg_line_0">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="收货地址管理"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true">
+						</TextView>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:background="@drawable/setting_point"
+							android:layout_centerVertical="true">
+						</ImageView>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/deletecache"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="11dp" android:paddingBottom="11dp"
+						android:background="@drawable/selectbg_line">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="清除缓存"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true"
+							android:layout_centerVertical="true">
+						</TextView>
+						<Button android:id="@+id/local_setting_clearbtn"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/local_setting_clearbtn_0"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true">
+						</Button>
+					</RelativeLayout>
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:paddingLeft="10dp"
+						android:paddingRight="10dp" android:paddingTop="11dp"
+						android:paddingBottom="11dp" android:background="@drawable/selectbg_line">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="通知提醒"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true"
+							android:layout_centerVertical="true">
+						</TextView>
+						<Button android:id="@+id/local_kgbtn_r"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="关" android:textColor="#cc000000" android:textSize="20dp"
+							android:background="@drawable/local_kgbtn_r"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true">
+						</Button>
+						<Button android:id="@+id/local_kgbtn_l"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="开" android:textColor="#ffffffff" android:textSize="20dp"
+							android:background="@drawable/local_kgbtn_l_f"
+							android:layout_toLeftOf="@id/local_kgbtn_r"
+							android:layout_centerVertical="true">
+						</Button>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/pwsetting"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="15dp" android:paddingBottom="15dp"
+						android:background="@drawable/selectbg_line_0">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="密码设置"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true">
+						</TextView>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:background="@drawable/setting_point"
+							android:layout_centerVertical="true">
+						</ImageView>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/feedback"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="15dp" android:paddingBottom="15dp"
+						android:background="@drawable/selectbg_line_0">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="用户反馈"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true">
+						</TextView>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:background="@drawable/setting_point"
+							android:layout_centerVertical="true">
+						</ImageView>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/updata"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="11dp" android:paddingBottom="11dp"
+						android:background="@drawable/selectbg_line">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="软件更新"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true"
+							android:layout_centerVertical="true">
+						</TextView>
+						<Button android:id="@+id/local_setting_updatabtn"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:background="@drawable/local_setting_updatabtn_0"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true">
+						</Button>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/about"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="15dp" android:paddingBottom="15dp"
+						android:background="@drawable/selectbg_line_0">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="关于"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true">
+						</TextView>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:background="@drawable/setting_point"
+							android:layout_centerVertical="true">
+						</ImageView>
+					</RelativeLayout>
+					<RelativeLayout android:id="@+id/logout"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:paddingLeft="10dp" android:paddingRight="10dp"
+						android:paddingTop="15dp" android:paddingBottom="15dp"
+						android:background="@drawable/selectbg_line_0">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="登出账号"
+							android:textColor="#cc000000" android:textSize="20dp"
+							android:layout_alignParentLeft="true">
+						</TextView>
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:background="@drawable/setting_point"
+							android:layout_centerVertical="true">
+						</ImageView>
+					</RelativeLayout>
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+
+	</FrameLayout>
+</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

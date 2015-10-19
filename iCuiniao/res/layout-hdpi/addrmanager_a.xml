@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout 
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@drawable/mainpagebg" 
+	android:orientation="vertical">
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/titlebarbg" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:paddingLeft="10dp"
+		android:paddingRight="10dp">
+		<Button android:id="@+id/titlebar_leftmenu"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/titlebar_menubutton_0"
+			android:layout_gravity="center_vertical" android:visibility="invisible">
+		</Button>
+		<Button android:id="@+id/titlebar_backbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_backbutton_0"
+			android:visibility="visible">
+		</Button>
+
+		<Button android:id="@+id/titlebar_addbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/title_addbtn_0">
+		</Button>
+
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_toRightOf="@id/titlebar_backbutton"
+			android:layout_toLeftOf="@id/titlebar_addbutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="收货地址管理" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<com.cmmobi.icuiniao.ui.view.LitviewNoOverScroll android:id="@+id/listDelivery" 
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent" 
+		android:layout_marginTop="20dp"
+		android:scrollbars="none" 
+		android:listSelector="@android:color/transparent"
+		android:fadingEdge="none"
+		android:scrollingCache="false"
+		android:divider="@null"
+		android:visibility="visible"
+		android:background="@drawable/mainpagebg"/>
+	<RelativeLayout android:id="@+id/empLinear"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:visibility="gone">
+		<ImageView android:id="@+id/empimg" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/emptybgimg"
+			android:layout_alignParentBottom="true" />
+		<RelativeLayout android:layout_above="@id/empimg"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:id="@+id/empTip" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="您还没有收货地址"
+				android:textColor="#FF2f2f2f" android:textSize="16sp"
+				android:layout_centerInParent="true">
+			</TextView>
+			<Button  android:id="@+id/addAddress"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/add_addrbtn_0" 
+				android:layout_below="@id/empTip"
+				android:layout_centerInParent="true"
+				android:layout_marginTop="20dp"/>
+			
+		</RelativeLayout>
+	</RelativeLayout>
+
+</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

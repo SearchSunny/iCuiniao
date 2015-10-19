@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="horizontal" android:paddingLeft="10dp"
+	android:paddingRight="10dp" android:paddingTop="10dp"
+	android:paddingBottom="10dp" android:background="@drawable/listitem_friendbg_0"
+	android:gravity="center_vertical">
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingRight="10dp">
+		<ImageView android:id="@+id/listitem_friend_icon"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/usericonbg">
+		</ImageView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingRight="10dp">
+		<TextView android:id="@+id/listitem_friend_name"
+			android:layout_width="108dp" android:layout_height="wrap_content"
+			android:text="" android:textSize="18dp" 
+			android:textColor="#cc000000" android:singleLine="true"
+			>
+		</TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingRight="10dp">
+		<ImageView android:id="@+id/listitem_friend_gender"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/womenbtn">
+		</ImageView>
+	</LinearLayout>
+	<TextView android:id="@+id/listitem_friend_addr"
+		android:layout_width="96dp" android:layout_height="wrap_content"
+		android:text="" android:textSize="16dp" android:textColor="#cc000000"
+		android:singleLine="true" >
+	</TextView>
+</LinearLayout>

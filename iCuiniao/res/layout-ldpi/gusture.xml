@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<android.gesture.GestureOverlayView
+		android:id="@+id/gestureview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gestureStrokeType="multiple">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView android:id="@+id/gesture_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:text="@string/gesture_title" android:textColor="#ffffffff"
+				android:textSize="20dip" android:layout_alignParentTop="true"
+				android:gravity="center_horizontal" android:paddingTop="20dip"
+				android:paddingBottom="20dp"></TextView>
+			<ImageView android:id="@+id/gesture_img"
+				android:layout_width="fill_parent" android:layout_height="270dp"
+				android:background="@drawable/bg_gesture" android:layout_below="@id/gesture_text"
+				android:layout_gravity="center"></ImageView>
+		</RelativeLayout>
+	</android.gesture.GestureOverlayView>
+</LinearLayout>

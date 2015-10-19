@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="#cc000000" android:orientation="horizontal"
+	android:paddingLeft="10dp" android:paddingRight="10dp"
+	android:paddingTop="10dp" android:paddingBottom="10dp">
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/linputline_button"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingLeft="20dp" android:paddingRight="10dp"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:gravity="center">
+			<Button android:id="@+id/inputline_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/okbtn_0">
+			</Button>
+		</LinearLayout>
+
+		<EditText android:id="@+id/inputline_box"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/searchfriend_inputbg" android:hint="搜索"
+			android:textSize="16dp" android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@id/linputline_button"
+			android:layout_centerVertical="true" android:singleLine="true"
+			android:maxLength="100">
+		</EditText>
+
+	</RelativeLayout>
+
+</LinearLayout>

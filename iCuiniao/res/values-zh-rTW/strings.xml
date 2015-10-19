@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">翠鳥</string>
+    <!-- 手势提示 -->
+    <string name="gesture_title">手勢面板</string>
+    <string name="gesture_load_false">手勢文件加載失敗</string>
+    
+    <!-- 网络状态提示 -->
+    <string name="reminder_no_net">網路連接不存在\n請檢查網路連接是否正常</string>
+    <string name="net_busying">網絡繁忙\n請稍候重試</string>
+    <string name="wait">處理中,請稍候</string>
+    
+    <!-- 分享 -->
+	<string name="share_title">分享</string>
+	<string name="share_item_weibo">微博</string>
+	<string name="share_item_qq">騰訊空間</string>
+	<string name="share_item_wx">微信</string>
+	<string name="share_item_renren">人人</string>
+	<string name="share_item_email">郵件</string>
+	<string name="share_item_sms">短信</string>
+	<string name="share_item_pengyou">朋友圈</string>
+	<!-- 新浪微博需要用的 -->
+	<string name="attention">注意</string>
+    <string name="delete_all">是否要刪除這條微博？</string>
+    <string name="ok">是</string>
+    <string name="cancel">否</string>
+    <string name="send">發送</string>
+    <string name="close">關閉</string>
+    <string name="share_dialog_title">新浪微博</string>
+    <string name="please_login">請登錄！</string>
+    <string name="send_sucess">分享成功！</string>
+    <string name="send_failed">分享失敗！</string>
+    <string name="del_pic">是否刪除圖片？</string>
+    <!-- QQ需要用到的 -->
+    <string name="qq_share_dialog_title">QQ空間</string>
+    
+    <string name="titlebar_text_all">首頁</string>
+    <string name="titlebar_text_discount">折扣</string>
+    <string name="titlebar_text_recommend">推薦</string>
+    <string name="titlebar_text_form">曬單</string>
+    <string name="titlebar_text_activities">活動</string>
+    <string name="titlebar_text_mylike">我的喜歡</string>
+    <string name="titlebar_text_mylooked">我看過的</string>
+    <string name="titlebar_text_userlike">TA的喜歡</string>
+    <string name="titlebar_text_userlooked">TA看過的</string>
+    
+    <string name="share_invite">時尚編輯精心挑選的寶貝，說不定是你正在尋找的，來吧，翠鳥給你想要的寶貝!</string>
+    
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:background="#ffFEF9F9"
+		android:visibility="visible">
+
+		<FrameLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<com.cmmobi.icuiniao.ui.view.MainMenu
+				android:id="@+id/mainmenu" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:background="@drawable/commoditybg">
+			</com.cmmobi.icuiniao.ui.view.MainMenu>
+
+			<LinearLayout android:id="@+id/commentAllListPage"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:orientation="vertical" android:background="#ffFEF9F9">
+
+				<RelativeLayout android:id="@+id/rtitlebar"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:background="@drawable/titlebarbg"
+					android:orientation="horizontal" 
+					android:paddingLeft="10dp" android:paddingRight="10dp"
+					android:layout_alignParentTop="true">
+					<Button android:id="@+id/titlebar_leftmenu"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:background="@drawable/titlebar_menubutton_0"
+						android:layout_gravity="center_vertical" android:visibility="invisible">
+					</Button>
+					<Button android:id="@+id/titlebar_backbutton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true" android:background="@drawable/titlebar_backbutton_0"
+						android:visibility="visible">
+					</Button>
+
+					<Button android:id="@+id/titlebar_menubutton"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0">
+					</Button>
+
+					<LinearLayout android:id="@+id/titlebar_title"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+						android:layout_toRightOf="@id/titlebar_backbutton"
+						android:layout_toLeftOf="@id/titlebar_menubutton">
+						<TextView android:id="@+id/titlebar_titletext"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="评论" android:textColor="#ccffffff" android:textSize="16dp"
+							android:paddingRight="5dp" android:singleLine="true">
+						</TextView>
+					</LinearLayout>
+
+				</RelativeLayout>
+
+				<com.cmmobi.icuiniao.ui.view.ListviewForRefresh
+					android:id="@+id/listview" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:cacheColorHint="@color/transparent_all"
+					android:fastScrollEnabled="true" android:focusable="true"
+					android:divider="#ffE4E0E0" android:dividerHeight="1px"
+					android:scrollbars="none" 
+					android:background="@color/transparent_all">
+				</com.cmmobi.icuiniao.ui.view.ListviewForRefresh>
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

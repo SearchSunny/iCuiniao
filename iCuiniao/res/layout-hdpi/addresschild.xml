@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:padding="10dp">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="10dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingRight="10dp"
+					android:layout_alignParentLeft="true" android:id="@+id/email">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="邮箱"
+						android:textColor="#cc000000" android:textSize="20dp">
+					</TextView>
+				</LinearLayout>
+				<EditText android:id="@+id/email_input"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/email" android:hint="对方邮箱地址,必填项"
+					android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+					android:singleLine="true" android:inputType="textEmailAddress"
+					android:maxLength="100">
+				</EditText>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="10dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingRight="10dp"
+					android:layout_alignParentLeft="true" android:id="@+id/addr">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="地址"
+						android:textColor="#cc000000" android:textSize="20dp">
+					</TextView>
+				</LinearLayout>
+				<EditText android:id="@+id/addr_input"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/addr" android:hint="收货人地址,必填项"
+					android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+					android:maxLength="100">
+				</EditText>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="10dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingRight="10dp"
+					android:layout_alignParentLeft="true" android:id="@+id/phone">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="手机"
+						android:textColor="#cc000000" android:textSize="20dp">
+					</TextView>
+				</LinearLayout>
+				<EditText android:id="@+id/phone_input"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/phone" android:hint="收货人手机号,必填项"
+					android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+					android:singleLine="true" android:inputType="number"
+					android:maxLength="11">
+				</EditText>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="10dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingRight="10dp"
+					android:layout_alignParentLeft="true" android:id="@+id/name">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="姓名"
+						android:textColor="#cc000000" android:textSize="20dp">
+					</TextView>
+				</LinearLayout>
+				<EditText android:id="@+id/name_input"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/name" android:hint="收货人姓名,必填项"
+					android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+					android:singleLine="true" android:maxLength="100">
+				</EditText>
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingBottom="10dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingRight="10dp"
+					android:layout_alignParentLeft="true" android:id="@+id/button">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="        "
+						android:textColor="#cc000000" android:textSize="20dp">
+					</TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_toRightOf="@id/button">
+					<Button android:id="@+id/modifybtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/addr_edit_default">
+					</Button>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true">
+					<Button android:id="@+id/delbtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/del_button">
+					</Button>
+				</LinearLayout>
+			</RelativeLayout>		
+			
+			
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="match_parent">
+
+	<LinearLayout android:id="@+id/lListItem_c"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/selectbg_line_0"
+		android:orientation="horizontal" android:paddingLeft="10dp"
+		android:paddingRight="10dp" android:paddingTop="10dp"
+		android:paddingBottom="10dp">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<ImageView android:id="@+id/listItem_c_commentIcon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/commenticon_u"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:visibility="gone">
+			</ImageView>
+			<TextView android:id="@+id/listItem_coquetryitem"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:text="" android:textColor="#ffacacac" android:textSize="16dp"
+				android:layout_alignParentLeft="true" android:layout_toLeftOf="@id/listItem_c_commentIcon">
+			</TextView>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

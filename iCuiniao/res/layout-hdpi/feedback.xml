@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/mainpagebg"
+		android:orientation="vertical">
+
+		<RelativeLayout android:id="@+id/rtitlebar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/titlebarbg" android:orientation="horizontal"
+			android:paddingLeft="10dp" android:paddingRight="10dp">
+
+			<Button android:id="@+id/titlebar_backbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:background="@drawable/titlebar_backbutton_0">
+			</Button>
+
+			<Button android:id="@+id/titlebar_menubutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:background="@drawable/titlebar_menubutton_0"
+				android:visibility="invisible">
+			</Button>
+
+			<LinearLayout android:id="@+id/titlebar_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" android:gravity="center_vertical|center_horizontal"
+				android:layout_toRightOf="@id/titlebar_backbutton"
+				android:layout_toLeftOf="@id/titlebar_menubutton">
+				<TextView android:id="@+id/titlebar_titletext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="用户反馈" android:textColor="#ccffffff" android:textSize="16dp"
+					android:paddingRight="5dp" android:singleLine="true">
+				</TextView>
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<!--
+			LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/commoditybg_line"
+			android:orientation="vertical" android:padding="10dp"
+			android:gravity="center"> <TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="感谢你使用本软件.为了使软件更好的为您服务,我们诚挚的邀请您,提出您的宝贵建议"
+			android:textColor="#ff7c7c7c" android:textSize="20dp"
+			android:textStyle="bold"> </TextView> </LinearLayout
+		-->
+
+		<ScrollView android:id="@+id/scrollview"
+		android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:padding="10dp"
+					android:background="@drawable/selectbg_line">
+					<EditText android:id="@+id/feedback_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:hint="反馈内容(最多100字)" android:textSize="20dp"
+						android:background="@drawable/poplike_inputbg" android:lines="4"
+						android:maxLines="4" android:imeOptions="actionDone"
+						android:maxLength="100">
+					</EditText>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentRight="true" android:id="@+id/feedback"
+						android:orientation="vertical" android:layout_below="@id/feedback_input">
+						<TextView android:id="@+id/input_num"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="您还可输入100字" android:textColor="#ff7c7c7c"
+							android:textSize="16dp">
+						</TextView>
+					</LinearLayout>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/phone">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="手机"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/phone_input"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/phone" android:hint="手工输入"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="number"
+						android:maxLength="11">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:background="@drawable/selectbg_line"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/qq">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="QQ  "
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/qq_input" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_toRightOf="@id/qq"
+						android:hint="手工输入" android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="number"
+						android:maxLength="100">
+					</EditText>
+				</RelativeLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:padding="10dp">
+					<Button android:id="@+id/okbtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/local_submitbtn_0">
+					</Button>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

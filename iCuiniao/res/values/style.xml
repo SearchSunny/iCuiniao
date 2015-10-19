@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="TransparentEight">
+		<item name="android:windowBackground">@color/transparent_eight</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+	</style>
+	
+	<style name="TransparentFive">
+		<item name="android:windowBackground">@color/transparent_five</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+	</style>
+	
+	<style name="TransparentAll">
+		<item name="android:windowBackground">@color/transparent_all</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+	</style>
+	
+	<style name="TransparentTen">
+		<item name="android:windowBackground">@color/transparent_ten</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+	</style>
+	
+	<!-- 新浪微博需要用的 -->
+	<style name="ContentOverlay" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@color/transparent_ten</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:backgroundDimEnabled">false</item>
+	</style>
+	
+	<!-- QQ需要用到的 -->
+	<style name="AnimationActivity" parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/zoom_enter</item><!-- 当前activity打开时，进入的activity的动画 -->
+		<item name="android:activityOpenExitAnimation">@null</item><!-- 当前activity打开时，退出的activity的动画 -->
+		<item name="android:activityCloseEnterAnimation">@null</item><!-- 当前activity关闭时，进入的activity的动画 -->
+		<item name="android:activityCloseExitAnimation">@anim/zoom_exit</item><!-- 当前activity关闭时，退出的activity的动画 -->
+	</style>
+
+	<style name="ThemeActivity">
+		<item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+	</style>
+	
+	<style name="FullScreenDialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:background">@color/transparent_all</item>
+		<item name="android:windowBackground">@color/transparent_ten</item>
+		<item name="android:backgroundDimEnabled">false</item>  
+	</style>	
+	<style name="FullScreenDialog1" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:background">@color/transparent_all</item>
+		<item name="android:windowBackground">@color/transparent_all</item>
+		<item name="android:backgroundDimEnabled">false</item>  
+	</style>	
+	<style name="MessageActivityStyle">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowAnimationStyle">@null</item>
+	</style>
+
+	<style name="OperatorStyle">
+	    <item name="android:windowNoTitle">true</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<item name="android:windowBackground">@color/transparent_ten</item>
+		<item name="android:windowIsTranslucent">true</item>	
+	</style>
+		
+	<style name="animStyle" parent="@android:style/Widget.ProgressBar.Large"> 
+        <item name="android:indeterminateDrawable">@anim/covergif</item> 
+    </style>
+
+	<!-- 没有边框的dialog 好友下拉菜单用-->
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+		<item name="android:backgroundDimEnabled">false</item><!--模糊-->
+	</style>
+	
+	<!--  赠送摇一摇的确认dialog-->
+	<style name="dialogshock" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+		<item name="android:backgroundDimEnabled">true</item><!--模糊-->
+		<item name="android:backgroundDimAmount">0.5</item>		
+	</style>
+	
+	<!-- 菜单相关统一从左到右的动画效果 -->
+	<style name="MenuAniStyle" parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/menu_left_in</item>
+		<item name="android:activityOpenExitAnimation">@null</item>
+		<item name="android:activityCloseEnterAnimation">@null</item>
+		<item name="android:activityCloseExitAnimation">@null</item>
+	</style>
+	
+	<style name="MenuAniActStyle">			
+		<item name="android:windowNoTitle">true</item>						
+		<item name="android:windowAnimationStyle">@style/MenuAniStyle</item>
+	</style> 
+	
+	<!-- webViewLoginActivity用，透明并且没有动画效果-->
+	<style name="TransparentNoAni">
+		<item name="android:windowBackground">@color/transparent_all</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@null</item>
+	</style>  
+
+    
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/titlebarfloatbg" android:orientation="horizontal"
+		android:paddingLeft="10dp" android:paddingRight="10dp">
+
+		<Button android:id="@+id/titlebar_backbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_backbutton1_0">
+		</Button>
+		<Button android:id="@+id/titlebar_leftmenu"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_menubutton1_0"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:visibility="invisible">
+			</Button>		
+		<LinearLayout android:id="@+id/ltitlebar_playbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_toRightOf="@id/titlebar_backbutton"
+			android:paddingLeft="10dp">
+			<Button android:id="@+id/titlebar_playbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_playbutton_0">
+			</Button>
+		</LinearLayout>
+
+		<Button android:id="@+id/titlebar_menubutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_menubutton1_0">
+		</Button>
+
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:paddingTop="10dp"
+			android:gravity="center_horizontal"
+			android:layout_toRightOf="@id/ltitlebar_playbutton"
+			android:layout_toLeftOf="@id/titlebar_menubutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+			<!--
+				ImageView android:id="@+id/titlebar_titleimage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/titlebar_sanjiao"
+				android:layout_gravity="center_vertical"> </ImageView
+			-->
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

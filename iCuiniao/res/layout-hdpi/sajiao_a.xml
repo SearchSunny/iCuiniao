@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout 
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/mainpagebg" android:orientation="vertical">
+
+	<RelativeLayout android:id="@+id/rtitlebar"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/titlebarbg" android:orientation="horizontal"
+		android:padding="10dp" android:layout_alignParentTop="true">
+
+		<Button android:id="@+id/titlebar_backbutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_backbutton_0">
+		</Button>
+
+		<Button android:id="@+id/titlebar_menubutton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:background="@drawable/titlebar_menubutton_0"
+			android:visibility="invisible">
+		</Button>
+
+		<LinearLayout android:id="@+id/titlebar_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+			android:gravity="center_vertical|center_horizontal"
+			android:layout_toRightOf="@id/titlebar_backbutton"
+			android:layout_toLeftOf="@id/titlebar_menubutton">
+			<TextView android:id="@+id/titlebar_titletext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="撒娇" android:textColor="#ccffffff" android:textSize="16dp"
+				android:paddingRight="5dp" android:singleLine="true">
+			</TextView>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ScrollView android:id="@+id/scrollview"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical"
+			android:background="#fffef9f9">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:padding="10dp" android:gravity="center_horizontal">
+				<TextView android:id="@+id/commodityname"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="2012秋冬新品" android:textColor="#cc000000"
+					android:textSize="20dp">
+				</TextView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:orientation="vertical" android:paddingBottom="10dp">
+				<ImageView android:id="@+id/commodityimg"
+					android:layout_width="140px" android:layout_height="140px">
+				</ImageView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:background="@drawable/selectbg_line2_f">
+
+				<LinearLayout android:id="@+id/litem1"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:orientation="vertical" android:padding="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<TextView android:id="@+id/item1" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text=""
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<com.cmmobi.icuiniao.ui.view.MGridView
+						android:id="@+id/button1" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:verticalSpacing="10dp"
+						android:horizontalSpacing="5dp" android:numColumns="3"
+						android:gravity="center_horizontal" android:scrollbars="none">
+					</com.cmmobi.icuiniao.ui.view.MGridView>
+				</LinearLayout>
+
+				<LinearLayout android:id="@+id/litem2"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:orientation="vertical" android:padding="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<TextView android:id="@+id/item2" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text=""
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<com.cmmobi.icuiniao.ui.view.MGridView
+						android:id="@+id/button2" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:verticalSpacing="10dp"
+						android:horizontalSpacing="5dp" android:numColumns="3"
+						android:gravity="center_horizontal" android:scrollbars="none">
+					</com.cmmobi.icuiniao.ui.view.MGridView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:padding="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:paddingBottom="10dp">
+						<TextView android:layout_width="wrap_content" 
+							android:layout_height="wrap_content" android:text="购买数量"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/num_input" android:gravity="center"
+						android:layout_width="80dp" android:layout_height="wrap_content"
+						android:textSize="20dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="number"
+						android:maxLength="100" android:text="1">
+					</EditText>
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:padding="10dp">
+				
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/addr"
+						android:gravity="center">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="地        址  "
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+						<EditText android:id="@+id/addr_input"
+						android:layout_width="fill_parent" android:layout_height="40dp"
+						android:layout_toRightOf="@id/addr" android:hint="请输入收货人地址"
+						android:textSize="15dp" android:background="@drawable/poplike_inputbg"
+						android:maxLength="100">
+					</EditText>
+					</LinearLayout>
+					
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/phone">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="手        机  "
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+						<EditText android:id="@+id/phone_input"
+						android:layout_width="fill_parent" android:layout_height="40dp"
+						android:layout_toRightOf="@id/phone" android:hint="请输入收货人手机号"
+						android:textSize="15dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="number"
+						android:maxLength="11">
+					</EditText>
+					</LinearLayout>
+					
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/name">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="姓        名  "
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+						<EditText android:id="@+id/name_input"
+						android:layout_width="fill_parent" android:layout_height="40dp"
+						android:layout_toRightOf="@id/name" android:hint="请输入收货人姓名"
+						android:textSize="15dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:maxLength="100">
+					</EditText>
+					</LinearLayout>
+					
+				</RelativeLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:paddingBottom="20dp" android:paddingTop="20dp">
+					<ImageView  android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:background="@drawable/sajiaopoint">
+					</ImageView>
+				</LinearLayout>
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="10dp">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/email">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="对方邮箱  "
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+						<EditText android:id="@+id/email_input"
+						android:layout_width="fill_parent" android:layout_height="40dp"
+						android:layout_toRightOf="@id/email" android:hint="请输入对方邮箱"
+						android:textSize="15dp" android:background="@drawable/poplike_inputbg"
+						android:singleLine="true" android:inputType="textEmailAddress"
+						android:maxLength="100">
+					</EditText>
+					</LinearLayout>
+					
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="10dp">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:paddingRight="10dp"
+						android:layout_alignParentLeft="true" android:id="@+id/msg">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="留        言"
+							android:textColor="#cc000000" android:textSize="20dp">
+						</TextView>
+					</LinearLayout>
+					<EditText android:id="@+id/msg_input"
+						android:layout_width="fill_parent" android:layout_height="80dp"
+						android:layout_toRightOf="@id/msg" android:hint="请输入留言"
+						android:textSize="15dp" android:background="@drawable/poplike_inputbg"
+						android:minLines="2" android:maxLength="100" android:gravity="top">
+					</EditText>
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:padding="10dp">
+					<Button android:id="@+id/sendbtn" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:background="@drawable/local_okbtn_0"
+						android:layout_centerHorizontal="true">
+					</Button>
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
+	<RelativeLayout android:id="@+id/rprogress"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ProgressBar android:id="@+id/loading"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:indeterminateDrawable="@drawable/loading"
+			android:layout_centerInParent="true" android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</FrameLayout>

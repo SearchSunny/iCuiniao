@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:paddingRight="50dp"
+			android:background="#fffef9f9">
+			<RelativeLayout android:id="@+id/rtitle"
+				android:layout_width="fill_parent" android:layout_height="50dp">
+				<TextView android:id="@+id/stylepage_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="自定义商品" android:textColor="#cc000000"
+					android:textSize="16dp" android:layout_centerInParent="true">
+				</TextView>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="1px" android:layout_alignParentBottom="true"
+					android:background="#cc000000">
+				</LinearLayout>
+			</RelativeLayout>
+			<com.cmmobi.icuiniao.ui.view.MGridView
+				android:id="@+id/stylepage_grid" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:numColumns="2"
+				android:padding="10dp" android:verticalSpacing="10dp"
+				android:horizontalSpacing="10dp" android:listSelector="#00ffffff"
+				android:scrollbars="none" android:layout_below="@id/rtitle"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true" android:gravity="center_horizontal">
+			</com.cmmobi.icuiniao.ui.view.MGridView>
+		</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/rprogress"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ProgressBar android:id="@+id/loading"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:indeterminateDrawable="@drawable/loading"
+				android:layout_centerInParent="true" android:visibility="invisible">
+			</ProgressBar>
+		</RelativeLayout>
+	</FrameLayout>
+</LinearLayout>

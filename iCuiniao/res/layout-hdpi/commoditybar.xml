@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingLeft="20dp" android:paddingRight="20dp"
+	android:paddingTop="20dp" android:paddingBottom="20dp"
+	android:background="#ffffffff" android:orientation="horizontal"
+	android:gravity="center_horizontal">
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingRight="10dp">
+		<LinearLayout android:id="@+id/commodity_commoditybtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/buttonbg_0" android:paddingLeft="10dp"
+			android:paddingRight="10dp" android:paddingTop="10dp"
+			android:paddingBottom="10dp" android:orientation="horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/commoditybtn">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+				<TextView android:id="@+id/commoditytext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="65" android:textColor="#cc000000" android:textSize="25dp">
+				</TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingLeft="10dp">
+		<LinearLayout android:id="@+id/commodity_activitybtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/buttonbg_0" android:paddingLeft="10dp"
+			android:paddingRight="10dp" android:paddingTop="10dp"
+			android:paddingBottom="10dp" android:orientation="horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/activitybtn">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+				<TextView android:id="@+id/activitytext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="39" android:textColor="#cc000000" android:textSize="25dp">
+				</TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
